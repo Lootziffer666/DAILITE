@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPLATTER Motion Library Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Barlow', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1C1B2E 0%, #2a2840 100%);
+      color: #fff;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 12px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: #7ED321;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .demo-area {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 120px;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .control-btn {
+      background: linear-gradient(135deg, #FF5757 0%, #FF9D3E 100%);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .control-btn:active {
+      transform: scale(0.94);
+    }
+
+    .section {
+      margin-bottom: 80px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      margin-top: 60px;
+    }
+
+    .section-subtitle {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 32px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .list {
+      list-style: none;
+    }
+
+    .list-item {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .controls {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 40px;
+      backdrop-filter: blur(10px);
+    }
+
+    .control-group {
+      margin-bottom: 20px;
+    }
+
+    .control-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .control-group select,
+    .control-group input {
+      width: 100%;
+      padding: 10px 12px;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      color: white;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .control-group select:focus,
+    .control-group input:focus {
+      outline: none;
+      border-color: #7ED321;
+      box-shadow: 0 0 0 2px rgba(126, 211, 33, 0.2);
+    }
+
+    .info {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SPLATTER Motion Library</h1>
+    <div class="subtitle">
+      FLUBBER's playful chaos meets adaptive interaction design
+    </div>
+
+    <!-- LIQUID WAVE SECTION -->
+    <div class="section">
+      <div class="section-title">Liquid Wave</div>
+      <div class="section-subtitle">Bouncing indicator for live updates</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Auto Mode</h3>
+          <p>Continuous bouncing — perfect for second displays with touch</p>
+          <div class="demo-area">
+            <div id="wave-auto"></div>
+          </div>
+          <div class="info">Infinitely bouncing</div>
+        </div>
+
+        <div class="card">
+          <h3>Click Mode</h3>
+          <p>Triggers on click — for traditional mouse interaction</p>
+          <div class="demo-area">
+            <div id="wave-click"></div>
+          </div>
+          <button class="control-btn">Click to Wave</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIPPLE SECTION -->
+    <div class="section">
+      <div class="section-title">Ripple</div>
+      <div class="section-subtitle">Expanding burst on interaction</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Ripple Button</h3>
+          <p>Classic ripple effect on button press</p>
+          <button class="control-btn" id="ripple-btn">Press Me</button>
+          <div class="info">Ripple on every click</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGGER SECTION -->
+    <div class="section">
+      <div class="section-title">Stagger</div>
+      <div class="section-subtitle">Cascade reveal for lists</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Stats List</h3>
+          <p>Items appear in sequence with playful timing</p>
+          <div id="stagger-demo"></div>
+          <button class="control-btn" id="stagger-btn">Reveal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BEAM SECTION -->
+    <div class="section">
+      <div class="section-title">Beam</div>
+      <div class="section-subtitle">Rotating border highlight</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Important Stat</h3>
+          <p>Draws attention with spinning conic gradient</p>
+          <div id="beam-demo"></div>
+          <div class="info">Automatic highlight effect</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WIPE SECTION -->
+    <div class="section">
+      <div class="section-title">Wipe</div>
+      <div class="section-subtitle">Sliding reveal effect</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Text Reveal</h3>
+          <p>Content slides in with wipe effect</p>
+          <div id="wipe-demo"></div>
+          <button class="control-btn" id="wipe-btn">Trigger Reveal</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENERGY BAR SECTION -->
+    <div class="section">
+      <div class="section-title">Energy Bar</div>
+      <div class="section-subtitle">Animated progress indicator</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Generator Progress</h3>
+          <p>Energy line sliding across progress bar</p>
+          <div id="energy-demo"></div>
+          <div class="info">75% generator completion</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORBITAL SECTION -->
+    <div class="section">
+      <div class="section-title">Orbital</div>
+      <div class="section-subtitle">Loading indicator</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Loading State</h3>
+          <p>Spinning orbital for async operations</p>
+          <div class="demo-area">
+            <div id="orbital-demo"></div>
+          </div>
+          <div class="info">Continuous rotation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="controls">
+      <h3 style="margin-bottom: 24px;">Motion Settings</h3>
+
+      <div class="control-group">
+        <label for="mode-select">Motion Mode</label>
+        <select id="mode-select">
+          <option value="auto">Auto (Continuous)</option>
+          <option value="click">Click-Triggered</option>
+          <option value="gesture">Gesture-Based</option>
+        </select>
+        <div class="info">Auto mode for touch displays, Click for mouse</div>
+      </div>
+
+      <div class="control-group">
+        <label for="intensity-slider">Motion Intensity</label>
+        <input
+          type="range"
+          id="intensity-slider"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value="1"
+        />
+        <div class="info">Adjust the power of motion effects</div>
+      </div>
+
+      <div class="control-group">
+        <div id="device-info" class="info"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import SplatterMotion from './lib/splatter-motion.js';
+
+    const splatter = new SplatterMotion({ mode: 'auto' });
+
+    // Liquid Wave
+    splatter.liquidWave(document.getElementById('wave-auto'), {
+      color: '#FF5757',
+      trigger: 'auto',
+    });
+
+    splatter.liquidWave(document.getElementById('wave-click'), {
+      color: '#3EC4D0',
+      trigger: 'click',
+    });
+
+    // Ripple
+    splatter.ripple(document.getElementById('ripple-btn'), {
+      color: '#7ED321',
+      trigger: 'click',
+    });
+
+    // Stagger
+    const staggerContainer = document.getElementById('stagger-demo');
+    ['Escape Rate: 66.7%', 'First Hook: 45s', 'Duration: 20m 30s'].forEach((text) => {
+      const item = document.createElement('div');
+      item.setAttribute('data-stagger-item', '');
+      item.className = 'list-item';
+      item.textContent = text;
+      staggerContainer.appendChild(item);
+    });
+
+    document.getElementById('stagger-btn').addEventListener('click', () => {
+      staggerContainer.querySelectorAll('[data-stagger-item]').forEach((item) => {
+        item.style.animation = 'none';
+      });
+      setTimeout(() => {
+        splatter.stagger(staggerContainer, { trigger: 'auto' });
+      }, 50);
+    });
+
+    // Beam
+    const beamDiv = document.createElement('div');
+    beamDiv.id = 'beam-demo';
+    beamDiv.style.cssText = 'width: 100%; height: 60px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: rgba(255,255,255,0.7);';
+    beamDiv.textContent = '★ Build Efficiency: +18%';
+    document.querySelector('[class="card"]:has(#beam-demo)').appendChild(beamDiv);
+    splatter.beam(beamDiv, { color1: '#A855F7', color2: '#F5E642', trigger: 'auto' });
+
+    // Wipe
+    const wipeDiv = document.getElementById('wipe-demo');
+    wipeDiv.style.cssText =
+      'width: 100%; height: 60px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.9);';
+    wipeDiv.textContent = 'Great match! High efficiency';
+    document.getElementById('wipe-btn').addEventListener('click', () => {
+      wipeDiv.style.animation = 'none';
+      splatter.wipe(wipeDiv, { color: '#7ED321', trigger: 'click' });
+    });
+
+    // Energy Bar
+    splatter.energyLine(document.getElementById('energy-demo'), {
+      progress: 0.75,
+      color: '#3EC4D0',
+      trigger: 'auto',
+    });
+
+    // Orbital
+    splatter.orbital(document.getElementById('orbital-demo'), {
+      color: '#FF9D3E',
+    });
+
+    // Controls
+    document.getElementById('mode-select').addEventListener('change', (e) => {
+      splatter.setMode(e.target.value);
+    });
+
+    document.getElementById('intensity-slider').addEventListener('input', (e) => {
+      splatter.setIntensity(parseFloat(e.target.value));
+    });
+
+    document.getElementById('device-info').textContent = `Device: ${
+      splatter.isTouchDevice() ? '📱 Touch-enabled' : '🖱️ Mouse/trackpad'
+    } | Respects reduced motion: ${splatter.respectsUserPreferences() ? 'Yes' : 'No'}`;
+
+    // Gooey filter
+    splatter.gooeyFilter();
+  </script>
+</body>
+</html>
