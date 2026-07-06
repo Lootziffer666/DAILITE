@@ -31,9 +31,10 @@ Not just win/loss tracking. **Real insight into your gameplay:**
 - **CSS Tokens** - Ink & Iron Glow design system
 - **SPLATTER Motion** - FLUBBER's adaptive motion grammar
 
-### Phase 2 (Coming)
-- **Tesseract.js** - OCR for Dead by Daylight UI
-- **Electron** - Desktop app with screen capture
+### Phase 2 (In Progress)
+- **Tesseract.js** - OCR for Dead by Daylight UI ✅
+- **Electron** - Desktop app with screen capture 🔨
+- **Sharp** - Image preprocessing for OCR accuracy
 
 ---
 
@@ -62,6 +63,21 @@ http://localhost:5173
 
 Click **"Simulate Match"** to generate test data and see the SPLATTER motion effects in action! 🌪️
 
+### 5. Live OCR (Optional - Phase 2)
+
+To enable real-time screen capture and OCR analysis:
+
+```bash
+# Terminal 3: Start Electron app (optional)
+npm run electron   # Desktop app with screen capture
+```
+
+The Electron app will:
+- Capture Dead by Daylight gameplay continuously
+- Extract killer, map, perks, and objectives via OCR
+- Display real-time suggestions in an overlay
+- Stream game state to the dashboard
+
 ---
 
 ## API Endpoints
@@ -86,6 +102,11 @@ Click **"Simulate Match"** to generate test data and see the SPLATTER motion eff
 - `GET /api/reference/killers` - All killers
 - `GET /api/reference/maps` - All maps
 - `GET /api/reference/perks?type=Survivor` - All perks
+
+### OCR Analysis (Phase 2)
+- `POST /api/ocr/analyze` - Analyze single screenshot (multipart/form-data)
+- `POST /api/ocr/live-session` - Batch analysis for match frames
+- `GET /api/ocr/status` - OCR system status
 
 **Swagger UI:** http://localhost:3000/api-docs
 
@@ -125,12 +146,15 @@ Click **"Simulate Match"** to generate test data and see the SPLATTER motion eff
 - [x] SPLATTER motion library
 - [x] Design tokens (Ink & Iron Glow + FLUBBER)
 
-### Phase 2 🚀 NEXT
-- [ ] Tesseract.js OCR integration
-- [ ] Electron desktop app
-- [ ] Live screen capture
-- [ ] Real-time match parsing
-- [ ] In-game overlay
+### Phase 2 🚀 IN PROGRESS
+- [x] Tesseract.js OCR integration (game state extraction)
+- [x] OCR REST endpoints (analyze, live-session)
+- [x] Image preprocessing (grayscale, normalize)
+- [x] Killer/map/perk detection from OCR text
+- [ ] Electron desktop app (screen capture bridge)
+- [ ] Live overlay window (transparent, always-on-top)
+- [ ] Real-time match parsing stream
+- [ ] Live suggestion engine
 
 ### Phase 3 📈 FUTURE
 - [ ] Advanced visualizations (heatmaps, graphs)
@@ -164,10 +188,17 @@ DAILITE/
 │   ├── matches.js
 │   ├── stats.js
 │   ├── builds.js
-│   └── reference.js
+│   ├── reference.js
+│   └── ocr.js                   # OCR analysis endpoints (Phase 2)
 ├── lib/
 │   ├── splatter-motion.js       # Core motion library
-│   └── splatter-components.jsx  # React wrappers
+│   ├── splatter-components.jsx  # React wrappers
+│   └── ocr.js                   # Tesseract.js OCR parser (Phase 2)
+├── electron/                    # Electron desktop app (Phase 2)
+│   ├── main.js                  # Screen capture & IPC handlers
+│   ├── preload.js               # IPC bridge
+│   ├── overlay.html             # In-game overlay UI
+│   └── overlay-preload.js       # Overlay IPC bridge
 ├── components/
 │   └── Dashboard.jsx            # Main app component
 ├── styles/
@@ -176,6 +207,7 @@ DAILITE/
 ├── scripts/
 │   ├── init-db.js               # Schema setup
 │   └── seed-wiki-data.js        # Reference data
+├── tmp/                         # Temp directory for OCR screenshots
 └── demo-splatter.html           # Motion effects demo
 ```
 
@@ -185,13 +217,18 @@ DAILITE/
 
 This is a **proof-of-concept** that advanced Dead by Daylight analytics isn't difficult to build:
 
-1. **Backend**: ✅ Done (1 day)
-2. **Design**: ✅ Done (using FLUBBER + IIG)
-3. **Motion**: ✅ Done (SPLATTER library)
-4. **Dashboard**: ✅ Done (React)
-5. **OCR**: → Next (Tesseract + screen capture)
+1. **Backend API**: ✅ Done (OpenAPI 3.0, PostgreSQL, Swagger)
+2. **Design System**: ✅ Done (Ink & Iron Glow + FLUBBER)
+3. **Motion Effects**: ✅ Done (SPLATTER library with adaptive triggering)
+4. **Dashboard UI**: ✅ Done (React 18 + Vite)
+5. **OCR Engine**: 🔨 In Progress (Tesseract.js + game state extraction)
+6. **Live Overlay**: → Next (Electron desktop app with screen capture)
 
-**Timeline:** Complete PoC in ~1 week with proper team.
+**Phase 1 Complete:** Full backend + polished dashboard with design + motion.  
+**Phase 2 Progress:** OCR parser extracts killer, map, perks, hooks, generators from screenshots.  
+**Phase 3 Vision:** Real-time in-game overlay with adaptive suggestions based on live match state.
+
+**Timeline:** MVP with live overlay in ~2 weeks; full PoC in ~1 month with team.
 
 ---
 
