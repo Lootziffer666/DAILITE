@@ -8,6 +8,29 @@ const pool = new Pool({
 });
 
 const createTablesSQL = `
+CREATE TABLE IF NOT EXISTS killers (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  real_name VARCHAR(255),
+  dlc VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS maps (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  realm VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS perks (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  type VARCHAR(50) NOT NULL,
+  perk_class VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS matches (
   id SERIAL PRIMARY KEY,
   player_name VARCHAR(255) NOT NULL,
@@ -52,6 +75,9 @@ CREATE TABLE IF NOT EXISTS killer_encounters (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE INDEX IF NOT EXISTS idx_killers_name ON killers(name);
+CREATE INDEX IF NOT EXISTS idx_maps_name ON maps(name);
+CREATE INDEX IF NOT EXISTS idx_perks_name ON perks(name);
 CREATE INDEX IF NOT EXISTS idx_matches_player ON matches(player_name);
 CREATE INDEX IF NOT EXISTS idx_matches_killer ON matches(killer);
 CREATE INDEX IF NOT EXISTS idx_matches_created_at ON matches(created_at);

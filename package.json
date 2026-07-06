@@ -8,6 +8,8 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "db:init": "node scripts/init-db.js",
+    "db:seed": "node scripts/seed-wiki-data.js",
+    "db:setup": "npm run db:init && npm run db:seed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

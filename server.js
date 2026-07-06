@@ -6,6 +6,7 @@ import { Pool } from 'pg';
 import matchRoutes from './routes/matches.js';
 import statsRoutes from './routes/stats.js';
 import buildsRoutes from './routes/builds.js';
+import referenceRoutes from './routes/reference.js';
 
 dotenv.config();
 
@@ -130,6 +131,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/api/matches', matchRoutes);
 app.use('/api/stats', statsRoutes);
 app.use('/api/builds', buildsRoutes);
+app.use('/api/reference', referenceRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
