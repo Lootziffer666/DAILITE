@@ -123,6 +123,80 @@ const swaggerSpec = {
         },
       },
     },
+    '/api/ocr/analyze': {
+      post: {
+        summary: 'Analyze Dead by Daylight screenshot via OCR',
+        tags: ['OCR'],
+        requestBody: {
+          required: true,
+          content: {
+            'multipart/form-data': {
+              schema: {
+                type: 'object',
+                properties: {
+                  screenshot: { type: 'string', format: 'binary' },
+                },
+                required: ['screenshot'],
+              },
+            },
+          },
+        },
+        responses: {
+          200: {
+            description: 'Game state extracted from screenshot',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    success: { type: 'boolean' },
+                    gameState: {
+                      type: 'object',
+                      properties: {
+                        killer: { type: 'string' },
+                        map: { type: 'string' },
+                        perks: { type: 'array', items: { type: 'string' } },
+                        hook_count: { type: 'integer' },
+                        generator_progress: { type: 'array', items: { type: 'number' } },
+                        objectives: { type: 'object' },
+                        escaped: { type: 'boolean' },
+                        confidence: { type: 'number' },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+          400: { description: 'No screenshot provided' },
+          500: { description: 'OCR analysis failed' },
+        },
+      },
+    },
+    '/api/ocr/status': {
+      get: {
+        summary: 'Get OCR system status',
+        tags: ['OCR'],
+        responses: {
+          200: {
+            description: 'OCR system status',
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    ocr_initialized: { type: 'boolean' },
+                    tesseract_version: { type: 'string' },
+                    supported_languages: { type: 'array', items: { type: 'string' } },
+                    status: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
   },
 };
 
