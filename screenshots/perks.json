@@ -1,0 +1,1928 @@
+[
+  {
+    "id": 36,
+    "name": "A Nurse's Calling",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 37,
+    "name": "A Place For Us",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 38,
+    "name": "Ace in the Hole",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 39,
+    "name": "Adrenaline",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 40,
+    "name": "Aftercare",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 41,
+    "name": "Agitation",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 42,
+    "name": "Alert",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 43,
+    "name": "Alien Instinct",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 44,
+    "name": "All-Shaking Thunder",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 45,
+    "name": "Any Means Necessary",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 46,
+    "name": "Apocalyptic Ingenuity",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 47,
+    "name": "Appraisal",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 48,
+    "name": "Artefact Hunter",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 49,
+    "name": "Autodidact",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 50,
+    "name": "Awakened Awareness",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 51,
+    "name": "Babysitter",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 52,
+    "name": "Background Player",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 53,
+    "name": "Bada Bada Boom",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 54,
+    "name": "Balanced Landing",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 55,
+    "name": "Bamboozle",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 56,
+    "name": "Barbecue & Chilli",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 57,
+    "name": "Bardic Inspiration",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 58,
+    "name": "Batteries Included",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 59,
+    "name": "Beast of Prey",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 61,
+    "name": "Better Together",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 60,
+    "name": "Better than New",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 62,
+    "name": "Bite the Bullet",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 63,
+    "name": "Bitter Murmur",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 64,
+    "name": "Blast Mine",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 65,
+    "name": "Blood Echo",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 66,
+    "name": "Blood Pact",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 67,
+    "name": "Blood Rush",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 68,
+    "name": "Blood Warden",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 69,
+    "name": "Bloodhound",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 70,
+    "name": "Boil Over",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 71,
+    "name": "Bond",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 72,
+    "name": "Boon: Circle of Healing",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 73,
+    "name": "Boon: Dark Theory",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 74,
+    "name": "Boon: Exponential",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 75,
+    "name": "Boon: Illumination",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 76,
+    "name": "Boon: Shadow Step",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 77,
+    "name": "Borrowed Time",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 78,
+    "name": "Botany Knowledge",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 79,
+    "name": "Bound by Obsession",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 80,
+    "name": "Breakdown",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 81,
+    "name": "Breakout",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 82,
+    "name": "Brutal Strength",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 83,
+    "name": "Buckle Up",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 84,
+    "name": "Built to Last",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 85,
+    "name": "Call of Brine",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 86,
+    "name": "Calm Spirit",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 87,
+    "name": "Camaraderie",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 88,
+    "name": "Champion of Light",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 89,
+    "name": "Change of Plan",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 90,
+    "name": "Chemical Trap",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 91,
+    "name": "Clairvoyance",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 92,
+    "name": "Clean Break",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 93,
+    "name": "Come and Get Me!",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 94,
+    "name": "Conviction",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 95,
+    "name": "Corrective Action",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 96,
+    "name": "Corrupt Intervention",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 97,
+    "name": "Coulrophobia",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 98,
+    "name": "Counterforce",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 99,
+    "name": "Coup de Grâce",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 100,
+    "name": "Cross-Examination",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 101,
+    "name": "Cruel Limits",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 102,
+    "name": "Cull the Weak",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 103,
+    "name": "Cut Loose",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 104,
+    "name": "Dance With Me",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 105,
+    "name": "Dark Arrogance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 106,
+    "name": "Dark Devotion",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 107,
+    "name": "Dark Sense",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 108,
+    "name": "Darkness Revealed",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 109,
+    "name": "Dead Hard",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 110,
+    "name": "Dead Man's Switch",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 111,
+    "name": "Deadline",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 112,
+    "name": "Deathbound",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 113,
+    "name": "Deception",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 114,
+    "name": "Deerstalker",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 115,
+    "name": "Deliverance",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 116,
+    "name": "Desperate Measures",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 117,
+    "name": "Detective's Hunch",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 118,
+    "name": "Discordance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 119,
+    "name": "Dissolution",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 120,
+    "name": "Distortion",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 121,
+    "name": "Distressing",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 122,
+    "name": "Diversion",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 123,
+    "name": "Do No Harm",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 124,
+    "name": "Dominance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 125,
+    "name": "Down to the Last",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 126,
+    "name": "Dragon's Grip",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 127,
+    "name": "Dramaturgy",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 128,
+    "name": "Duty of Care",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 129,
+    "name": "Déjà Vu",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 130,
+    "name": "Empathic Connection",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 131,
+    "name": "Empathy",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 132,
+    "name": "Enduring",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 133,
+    "name": "Eruption",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 134,
+    "name": "Extrasensory Perception",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 135,
+    "name": "Exultation",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 136,
+    "name": "Eyes of Belmont",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 137,
+    "name": "Fast Track",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 138,
+    "name": "Finesse",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 139,
+    "name": "Fire Up",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 140,
+    "name": "Five Moves Ahead",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 141,
+    "name": "Fixated",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 142,
+    "name": "Flashbang",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 143,
+    "name": "Flip-Flop",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 144,
+    "name": "Flow State",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 145,
+    "name": "Fogwise",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 146,
+    "name": "For the People",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 147,
+    "name": "Forced Hesitation",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 148,
+    "name": "Forced Penance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 149,
+    "name": "Forever Entwined",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 150,
+    "name": "Franklin's Demise",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 151,
+    "name": "Friendly Competition",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 152,
+    "name": "Friends 'til the End",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 153,
+    "name": "Furtive Chase",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 154,
+    "name": "Game Afoot",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 155,
+    "name": "Gearhead",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 156,
+    "name": "Genetic Limits",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 157,
+    "name": "Ghost Notes",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 158,
+    "name": "Grim Embrace",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 159,
+    "name": "Hardened",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 160,
+    "name": "Haywire",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 161,
+    "name": "Head On",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 162,
+    "name": "Help Wanted",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 163,
+    "name": "Hex: Blood Favour",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 164,
+    "name": "Hex: Crowd Control",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 165,
+    "name": "Hex: Devour Hope",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 166,
+    "name": "Hex: Face the Darkness",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 167,
+    "name": "Hex: Fortune's Fool",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 168,
+    "name": "Hex: Haunted Ground",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 169,
+    "name": "Hex: Hive Mind",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 170,
+    "name": "Hex: Huntress Lullaby",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 171,
+    "name": "Hex: No One Escapes Death",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 172,
+    "name": "Hex: Nothing but Misery",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 173,
+    "name": "Hex: Overture of Doom",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 174,
+    "name": "Hex: Pentimento",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 175,
+    "name": "Hex: Retribution",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 176,
+    "name": "Hex: Ruin",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 177,
+    "name": "Hex: Scared to Death",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 178,
+    "name": "Hex: The Third Seal",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 179,
+    "name": "Hex: Thrill of the Hunt",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 180,
+    "name": "Hex: Two Can Play",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 181,
+    "name": "Hex: Undying",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 182,
+    "name": "Hex: Wretched Fate",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 183,
+    "name": "Hoarder",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 184,
+    "name": "Hope",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 185,
+    "name": "Hubris",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 186,
+    "name": "Human Greed",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 187,
+    "name": "Hyperfocus",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 188,
+    "name": "Hysteria",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 189,
+    "name": "I'm All Ears",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 190,
+    "name": "In the Dark",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 191,
+    "name": "Infectious Fright",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 192,
+    "name": "Inner Focus",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 193,
+    "name": "Inner Strength",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 194,
+    "name": "Insidious",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 195,
+    "name": "Invocation: Treacherous Crows",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 196,
+    "name": "Invocation: Weaving Spiders",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 197,
+    "name": "Iron Grasp",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 198,
+    "name": "Iron Maiden",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 199,
+    "name": "Iron Will",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 200,
+    "name": "Keep Them Waiting",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 201,
+    "name": "Kindred",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 202,
+    "name": "Knock Out",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 203,
+    "name": "Languid Touch",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 204,
+    "name": "Last Stand",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 205,
+    "name": "Last Standing",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 206,
+    "name": "Leader",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 207,
+    "name": "Left Behind",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 208,
+    "name": "Lend a Hand",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 209,
+    "name": "Lethal Pursuer",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 210,
+    "name": "Leverage",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 211,
+    "name": "Light-Footed",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 212,
+    "name": "Lightborn",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 213,
+    "name": "Lightweight",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 214,
+    "name": "Lithe",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 215,
+    "name": "Low Profile",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 216,
+    "name": "Lucky Break",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 217,
+    "name": "Lucky Star",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 218,
+    "name": "Machine Learning",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 219,
+    "name": "Mad Grit",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 220,
+    "name": "Made for This",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 221,
+    "name": "Make Your Choice",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 222,
+    "name": "Merciless Storm",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 223,
+    "name": "Mettle of Man",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 224,
+    "name": "Mindbreaker",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 225,
+    "name": "Mirrored Illusion",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 226,
+    "name": "Moment of Glory",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 227,
+    "name": "Monitor & Abuse",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 228,
+    "name": "Nemesis",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 229,
+    "name": "No Holds Barred",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 230,
+    "name": "No Mither",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 231,
+    "name": "No One Left Behind",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 232,
+    "name": "No Quarter",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 233,
+    "name": "No Way Out",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 234,
+    "name": "None Are Free",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 235,
+    "name": "Nowhere to Hide",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 236,
+    "name": "Off the Record",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 237,
+    "name": "One-Two-Three-Four!",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 238,
+    "name": "Open-Handed",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 239,
+    "name": "Oppression",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 240,
+    "name": "Overcharge",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 241,
+    "name": "Overcome",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 242,
+    "name": "Overconfidence",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 243,
+    "name": "Overwhelming Presence",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 244,
+    "name": "Overzealous",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 245,
+    "name": "Parental Guidance",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 246,
+    "name": "Phantom Fear",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 247,
+    "name": "Pharmacy",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 248,
+    "name": "Plot Twist",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 249,
+    "name": "Plunderer's Instinct",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 250,
+    "name": "Poised",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 251,
+    "name": "Pop Goes the Weasel",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 252,
+    "name": "Potential Energy",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 253,
+    "name": "Power Struggle",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 254,
+    "name": "Predator",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 255,
+    "name": "Premonition",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 256,
+    "name": "Prove Thyself",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 257,
+    "name": "Quick & Quiet",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 258,
+    "name": "Quick Gambit",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 259,
+    "name": "Rampage",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 260,
+    "name": "Rancor",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 261,
+    "name": "Rapid Brutality",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 262,
+    "name": "Rapid Response",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 263,
+    "name": "Ravenous",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 264,
+    "name": "Reactive Healing",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 265,
+    "name": "Reassurance",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 266,
+    "name": "Red Herring",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 267,
+    "name": "Remember Me",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 268,
+    "name": "Repressed Alliance",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 269,
+    "name": "Residual Manifest",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 270,
+    "name": "Resilience",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 271,
+    "name": "Resurgence",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 272,
+    "name": "Road Life",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 273,
+    "name": "Rookie Spirit",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 274,
+    "name": "Saboteur",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 275,
+    "name": "Scavenger",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 276,
+    "name": "Scene Partner",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 277,
+    "name": "Scourge Hook: Floods of Rage",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 278,
+    "name": "Scourge Hook: Hangman's Trick",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 279,
+    "name": "Scourge Hook: Jagged Compass",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 280,
+    "name": "Scourge Hook: Monstrous Shrine",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 281,
+    "name": "Scourge Hook: Pain Resonance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 282,
+    "name": "Scourge Hook: Weeping Wounds",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 283,
+    "name": "Second Wind",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 284,
+    "name": "Secret Project",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 285,
+    "name": "See How They Run",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 286,
+    "name": "Self-Care",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 287,
+    "name": "Self-Preservation",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 288,
+    "name": "Septic Touch",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 289,
+    "name": "Shadowborn",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 290,
+    "name": "Shattered Hope",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 291,
+    "name": "Shoulder the Burden",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 292,
+    "name": "Silent Shadow",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 293,
+    "name": "Slippery Meat",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 294,
+    "name": "Sloppy Butcher",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 295,
+    "name": "Small Game",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 296,
+    "name": "Smash Hit",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 297,
+    "name": "Solidarity",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 298,
+    "name": "Soul Guard",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 299,
+    "name": "Specialist",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 300,
+    "name": "Spies from the Shadows",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 301,
+    "name": "Spine Chill",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 302,
+    "name": "Spirit Fury",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 303,
+    "name": "Sprint Burst",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 304,
+    "name": "Stake Out",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 305,
+    "name": "Starstruck",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 306,
+    "name": "Still Sight",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 307,
+    "name": "Streetwise",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 308,
+    "name": "Strength in Shadows",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 309,
+    "name": "Stridor",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 310,
+    "name": "Superior Anatomy",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 311,
+    "name": "Surge",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 312,
+    "name": "Surveillance",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 326,
+    "name": "THWACK!",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 313,
+    "name": "Teamwork: Collective Stealth",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 314,
+    "name": "Teamwork: Full Circuit",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 315,
+    "name": "Teamwork: Power of Two",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 316,
+    "name": "Teamwork: Soft-Spoken",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 317,
+    "name": "Teamwork: Throw Down",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 318,
+    "name": "Teamwork: Toughen Up",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 319,
+    "name": "Technician",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 320,
+    "name": "Tenacity",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 321,
+    "name": "Terminus",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 322,
+    "name": "Territorial Imperative",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 323,
+    "name": "Thanatophobia",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 324,
+    "name": "This Is Not Happening",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 325,
+    "name": "Thrilling Tremors",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 327,
+    "name": "Tinkerer",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 328,
+    "name": "Tough Runner",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 329,
+    "name": "Trail of Torment",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 330,
+    "name": "Troubleshooter",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 331,
+    "name": "Turn Back the Clock",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 332,
+    "name": "Ultimate Weapon",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 333,
+    "name": "Unbound",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 334,
+    "name": "Unbreakable",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 335,
+    "name": "Underperform",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 336,
+    "name": "Undone",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 337,
+    "name": "Unforeseen",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 338,
+    "name": "Unnerving Presence",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 339,
+    "name": "Unrelenting",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 340,
+    "name": "Up the Ante",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 341,
+    "name": "Urban Evasion",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 342,
+    "name": "Vigil",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 343,
+    "name": "Visionary",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 344,
+    "name": "Wake Up!",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 345,
+    "name": "Wandering Eye",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 346,
+    "name": "We See You",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 347,
+    "name": "We'll Make It",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 348,
+    "name": "We're Gonna Live Forever",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 349,
+    "name": "Weave Attunement",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 350,
+    "name": "Whispers",
+    "type": "Killer",
+    "perk_class": null
+  },
+  {
+    "id": 351,
+    "name": "Wicked",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 352,
+    "name": "Wide Open Throttle",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 353,
+    "name": "Will to Live",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 354,
+    "name": "Windows of Opportunity",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 355,
+    "name": "Wiretap",
+    "type": "Survivor",
+    "perk_class": null
+  },
+  {
+    "id": 356,
+    "name": "Zanshin Tactics",
+    "type": "Killer",
+    "perk_class": null
+  }
+]

@@ -1,0 +1,237 @@
+[
+  {
+    "id": 18,
+    "name": "Azarov's Resting Place",
+    "realm": "Autohaven Wreckers"
+  },
+  {
+    "id": 36,
+    "name": "Badham Preschool",
+    "realm": "Springwood"
+  },
+  {
+    "id": 19,
+    "name": "Blood Lodge",
+    "realm": "Autohaven Wreckers"
+  },
+  {
+    "id": 13,
+    "name": "Coal Tower",
+    "realm": "The MacMillan Estate"
+  },
+  {
+    "id": 43,
+    "name": "Dead Dawg Saloon",
+    "realm": "Grave of Glenvale"
+  },
+  {
+    "id": 49,
+    "name": "Dead Sands",
+    "realm": "Forsaken Boneyard"
+  },
+  {
+    "id": 28,
+    "name": "Disturbed Ward",
+    "realm": "Crotus Prenn Asylum"
+  },
+  {
+    "id": 48,
+    "name": "Eyrie of Crows",
+    "realm": "Forsaken Boneyard"
+  },
+  {
+    "id": 53,
+    "name": "Fallen Refuge",
+    "realm": "Withered Isle"
+  },
+  {
+    "id": 38,
+    "name": "Family Residence",
+    "realm": "Yamaoka Estate"
+  },
+  {
+    "id": 29,
+    "name": "Father Campbell's Chapel",
+    "realm": "Crotus Prenn Asylum"
+  },
+  {
+    "id": 55,
+    "name": "Forgotten Ruins",
+    "realm": "The Decimated Borgo"
+  },
+  {
+    "id": 23,
+    "name": "Fractured Cowshed",
+    "realm": "Coldwind Farm"
+  },
+  {
+    "id": 52,
+    "name": "Freddy Fazbear's Pizza",
+    "realm": "Withered Isle"
+  },
+  {
+    "id": 50,
+    "name": "Garden of Joy",
+    "realm": "Withered Isle"
+  },
+  {
+    "id": 20,
+    "name": "Gas Heaven",
+    "realm": "Autohaven Wreckers"
+  },
+  {
+    "id": 51,
+    "name": "Greenville Square",
+    "realm": "Withered Isle"
+  },
+  {
+    "id": 32,
+    "name": "Grim Pantry",
+    "realm": "Backwater Swamp"
+  },
+  {
+    "id": 14,
+    "name": "Groaning Storehouse",
+    "realm": "The MacMillan Estate"
+  },
+  {
+    "id": 15,
+    "name": "Ironworks of Misery",
+    "realm": "The MacMillan Estate"
+  },
+  {
+    "id": 30,
+    "name": "Lampkin Lane",
+    "realm": "Haddonfield"
+  },
+  {
+    "id": 44,
+    "name": "Midwich Elementary School",
+    "realm": "Silent Hill"
+  },
+  {
+    "id": 34,
+    "name": "Mother's Dwelling",
+    "realm": "Red Forest"
+  },
+  {
+    "id": 40,
+    "name": "Mount Ormond Resort",
+    "realm": "Ormond"
+  },
+  {
+    "id": 57,
+    "name": "Nostromo Wreckage",
+    "realm": "Dvarka Deepwood"
+  },
+  {
+    "id": 41,
+    "name": "Ormond Lake Mine",
+    "realm": "Ormond"
+  },
+  {
+    "id": 45,
+    "name": "Raccoon City Police Station",
+    "realm": "Raccoon City"
+  },
+  {
+    "id": 46,
+    "name": "Raccoon City Police Station East Wing",
+    "realm": "Raccoon City"
+  },
+  {
+    "id": 47,
+    "name": "Raccoon City Police Station West Wing",
+    "realm": "Raccoon City"
+  },
+  {
+    "id": 24,
+    "name": "Rancid Abattoir",
+    "realm": "Coldwind Farm"
+  },
+  {
+    "id": 25,
+    "name": "Rotten Fields",
+    "realm": "Coldwind Farm"
+  },
+  {
+    "id": 39,
+    "name": "Sanctum of Wrath",
+    "realm": "Yamaoka Estate"
+  },
+  {
+    "id": 16,
+    "name": "Shelter Woods",
+    "realm": "The MacMillan Estate"
+  },
+  {
+    "id": 17,
+    "name": "Suffocation Pit",
+    "realm": "The MacMillan Estate"
+  },
+  {
+    "id": 37,
+    "name": "The Game",
+    "realm": "Gideon Meat Plant"
+  },
+  {
+    "id": 59,
+    "name": "The Mall",
+    "realm": "Unknown/TBD (not yet assigned to a released Realm)"
+  },
+  {
+    "id": 31,
+    "name": "The Pale Rose",
+    "realm": "Backwater Swamp"
+  },
+  {
+    "id": 54,
+    "name": "The Shattered Square",
+    "realm": "The Decimated Borgo"
+  },
+  {
+    "id": 35,
+    "name": "The Temple of Purgation",
+    "realm": "Red Forest"
+  },
+  {
+    "id": 26,
+    "name": "The Thompson House",
+    "realm": "Coldwind Farm"
+  },
+  {
+    "id": 42,
+    "name": "The Underground Complex",
+    "realm": "Hawkins National Laboratory"
+  },
+  {
+    "id": 56,
+    "name": "Toba Landing",
+    "realm": "Dvarka Deepwood"
+  },
+  {
+    "id": 27,
+    "name": "Torment Creek",
+    "realm": "Coldwind Farm"
+  },
+  {
+    "id": 33,
+    "name": "Treatment Theatre",
+    "realm": "Léry's Memorial Institute"
+  },
+  {
+    "id": 58,
+    "name": "Trickster's Delusion",
+    "realm": "Sleepless District"
+  },
+  {
+    "id": 21,
+    "name": "Wreckers' Yard",
+    "realm": "Autohaven Wreckers"
+  },
+  {
+    "id": 22,
+    "name": "Wretched Shop",
+    "realm": "Autohaven Wreckers"
+  }
+]
