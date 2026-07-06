@@ -7,6 +7,7 @@ import matchRoutes from './routes/matches.js';
 import statsRoutes from './routes/stats.js';
 import buildsRoutes from './routes/builds.js';
 import referenceRoutes from './routes/reference.js';
+import ocrRoutes from './routes/ocr.js';
 
 dotenv.config();
 
@@ -132,6 +133,7 @@ app.use('/api/matches', matchRoutes);
 app.use('/api/stats', statsRoutes);
 app.use('/api/builds', buildsRoutes);
 app.use('/api/reference', referenceRoutes);
+app.use('/api/ocr', ocrRoutes);
 
 // Health check
 app.get('/health', (req, res) => {

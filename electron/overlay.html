@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAILITE Overlay</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      color: #fff;
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .overlay-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 350px;
+      max-height: 80vh;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #3ec4d0;
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 8px 32px rgba(62, 196, 208, 0.3);
+      animation: slideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .overlay-header {
+      font-family: 'Lilita One', sans-serif;
+      font-size: 18px;
+      color: #3ec4d0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #3ec4d03d;
+    }
+
+    .killer-badge {
+      display: inline-block;
+      background: #ff9d3e;
+      color: #000;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .suggestion {
+      background: rgba(62, 196, 208, 0.1);
+      border-left: 3px solid #3ec4d0;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .suggestion strong {
+      color: #7ed321;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .objectives {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .objective {
+      background: rgba(196, 30, 58, 0.2);
+      border: 1px solid #c41e3a;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .objective.completed {
+      background: rgba(126, 211, 33, 0.2);
+      border-color: #7ed321;
+    }
+
+    .status-indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #c41e3a;
+      animation: pulse 2s infinite;
+    }
+
+    .objective.completed .status-indicator {
+      background: #7ed321;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .confidence {
+      font-size: 12px;
+      color: #888;
+      text-align: right;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #3ec4d03d;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay-container hidden" id="overlay">
+    <div class="overlay-header">
+      <span>LIVE ANALYSIS</span>
+      <span id="killer" class="killer-badge">—</span>
+    </div>
+
+    <div id="suggestions"></div>
+
+    <div class="objectives" id="objectives"></div>
+
+    <div class="confidence" id="confidence"></div>
+  </div>
+
+  <script>
+    window.overlayAPI.onGameStateUpdate((event, gameState) => {
+      const overlay = document.getElementById('overlay');
+      const killerBadge = document.getElementById('killer');
+      const suggestionsContainer = document.getElementById('suggestions');
+      const objectivesContainer = document.getElementById('objectives');
+      const confidenceDiv = document.getElementById('confidence');
+
+      if (!gameState) {
+        overlay.classList.add('hidden');
+        return;
+      }
+
+      overlay.classList.remove('hidden');
+
+      killerBadge.textContent = gameState.killer || 'UNKNOWN';
+
+      suggestionsContainer.innerHTML = '';
+      const suggestions = generateSuggestions(gameState);
+      suggestions.forEach(suggestion => {
+        const div = document.createElement('div');
+        div.className = 'suggestion';
+        div.innerHTML = `<strong>${suggestion.title}</strong>${suggestion.text}`;
+        suggestionsContainer.appendChild(div);
+      });
+
+      objectivesContainer.innerHTML = '';
+      if (gameState.objectives) {
+        const obj = gameState.objectives;
+        [
+          { key: 'exit_gates_open', label: 'Gates Open' },
+          { key: 'hatch_open', label: 'Hatch' },
+          { key: 'totem_active', label: 'Totem' },
+        ].forEach(({ key, label }) => {
+          const div = document.createElement('div');
+          div.className = `objective ${obj[key] ? 'completed' : ''}`;
+          div.innerHTML = `<span class="status-indicator"></span>${label}`;
+          objectivesContainer.appendChild(div);
+        });
+      }
+
+      const confPercent = Math.round((gameState.confidence || 0) * 100);
+      confidenceDiv.textContent = `OCR Confidence: ${confPercent}%`;
+    });
+
+    function generateSuggestions(gameState) {
+      const suggestions = [];
+
+      if (gameState.hook_count >= 2) {
+        suggestions.push({
+          title: 'DANGER ZONE',
+          text: 'High hook count. Prioritize safety and avoid chases.',
+        });
+      }
+
+      if (gameState.generator_progress && gameState.generator_progress.length > 0) {
+        const avgProgress = gameState.generator_progress.reduce((a, b) => a + b) / gameState.generator_progress.length;
+        if (avgProgress < 0.5) {
+          suggestions.push({
+            title: 'GENERATORS',
+            text: 'Gens are slow. Coordinate with teammates and focus on quick objectives.',
+          });
+        } else if (avgProgress > 0.8) {
+          suggestions.push({
+            title: 'FINAL STRETCH',
+            text: 'Generators almost done. Prepare exit strategy.',
+          });
+        }
+      }
+
+      if (gameState.perks && gameState.perks.length > 0) {
+        suggestions.push({
+          title: 'BUILD ACTIVE',
+          text: `Running ${gameState.perks.slice(0, 2).join(', ')}. Play to their strengths.`,
+        });
+      }
+
+      if (suggestions.length === 0) {
+        suggestions.push({
+          title: 'READY',
+          text: 'System online and tracking. Good luck!',
+        });
+      }
+
+      return suggestions;
+    }
+  </script>
+</body>
+</html>
