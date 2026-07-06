@@ -17,11 +17,12 @@ import {
   OrbitLoader,
   MotionToggle,
 } from '../lib/splatter-components';
+import OCRTester from './OCRTester';
 import '../styles/design-tokens.css';
 import '../styles/dashboard.css';
 
 export default function Dashboard() {
-  const [activeView, setActiveView] = useState('home'); // 'home' | 'match' | 'stats' | 'builds'
+  const [activeView, setActiveView] = useState('home'); // 'home' | 'match' | 'stats' | 'builds' | 'ocr'
   const [loading, setLoading] = useState(false);
   const [playerName, setPlayerName] = useState('Player1');
   const [matchData, setMatchData] = useState(null);
@@ -107,6 +108,12 @@ export default function Dashboard() {
           onClick={() => setActiveView('builds')}
         >
           🔮 Builds
+        </RippleButton>
+        <RippleButton
+          className={`nav-btn ${activeView === 'ocr' ? 'active' : ''}`}
+          onClick={() => setActiveView('ocr')}
+        >
+          🔬 OCR Test
         </RippleButton>
       </nav>
 
@@ -319,12 +326,19 @@ export default function Dashboard() {
             </div>
           </div>
         )}
+
+        {/* OCR TEST VIEW */}
+        {activeView === 'ocr' && (
+          <div className="view-ocr">
+            <OCRTester />
+          </div>
+        )}
       </main>
 
       {/* FOOTER */}
       <footer className="dashboard-footer">
         <p className="body-sm">
-          DAILITE v0.1 • OpenAPI • Backend ready • OCR coming soon
+          DAILITE v0.2 • OpenAPI 3.0 • Backend ready • OCR analyzer built • Electron overlay coming
         </p>
       </footer>
     </div>
