@@ -1,141 +1,215 @@
-# DAILITE - Dead by Daylight Analytics
+# DAILITE 🎮⚡
 
-A real-time Dead by Daylight Companion App that captures match data via OCR and provides advanced analytics, build coaching, and match narrative summaries.
+**Dead by Daylight Personal Analytics**  
+Match analytics engine combining Ink & Iron Glow design with FLUBBER's playful motion chaos.
 
-## Features
+---
 
-- **Live Match Capture** - Screen capture + OCR to extract match data in real-time
-- **Match Stories** - Narrative summaries of matches (not just stats)
-- **Advanced Statistics** - Beyond escape rate: chase duration, hook timing, generator contribution, heal time, totem time
-- **Build Coach** - Analyze build effectiveness against specific killers
-- **Killer Database** - Learn common killer combinations and track problematic matchups
-- **Map Knowledge** - Track performance by map and spawn patterns
+## What is DAILITE?
 
-## Architecture
+Not just win/loss tracking. **Real insight into your gameplay:**
 
-### Backend Stack
-- **Node.js + Express** - REST API
-- **PostgreSQL** - Data persistence
-- **OpenAPI 3.0** - Full API documentation
+- 📖 **Match Stories** - Narrative summaries instead of raw stats
+- 📊 **Advanced Analytics** - Chase duration, hook timing, generator efficiency, heal time
+- 🔮 **Build Coach** - Personalized perk effectiveness vs killer types
+- 👹 **Killer Database** - Track your performance against each killer
+- 🗺️ **Map Knowledge** - Performance breakdowns by map
+- ⚡ **Real-time Overlay** - Live game suggestions (when OCR is ready)
 
-### Frontend Stack
-- **Electron** - Desktop app for screen capture + OCR
-- **React** - Web dashboard for analytics
+---
+
+## Tech Stack
+
+### Backend
+- **Node.js + Express** - OpenAPI 3.0 REST API
+- **PostgreSQL** - Match & stats persistence
+- **Swagger** - Interactive API docs
+
+### Frontend  
+- **React 18** - Dashboard UI
+- **Vite** - Fast dev server
+- **CSS Tokens** - Ink & Iron Glow design system
+- **SPLATTER Motion** - FLUBBER's adaptive motion grammar
+
+### Phase 2 (Coming)
 - **Tesseract.js** - OCR for Dead by Daylight UI
+- **Electron** - Desktop app with screen capture
 
-## Setup
+---
 
-### Prerequisites
-- Node.js 18+
-- PostgreSQL 12+
+## Quick Start
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repo-url>
-cd dailite
-```
-
-2. Install dependencies:
+### 1. Install Dependencies
 ```bash
 npm install
 ```
 
-3. Create `.env` from `.env.example`:
+### 2. Start Backend (Terminal 1)
 ```bash
-cp .env.example .env
+npm run db:setup  # Initialize + seed database
+npm start         # Backend on localhost:3000
 ```
 
-4. Configure your database connection in `.env`:
-```env
-DATABASE_URL=postgresql://user:password@localhost:5432/dailite
-PORT=3000
-```
-
-5. Initialize the database:
+### 3. Start Frontend (Terminal 2)
 ```bash
-npm run db:init
+npm run dev       # Vite dev server on localhost:5173
 ```
 
-6. Start the development server:
-```bash
-npm run dev
+### 4. Visit Dashboard
+```
+http://localhost:5173
 ```
 
-The API will be available at `http://localhost:3000` with Swagger documentation at `http://localhost:3000/api-docs`.
+Click **"Simulate Match"** to generate test data and see the SPLATTER motion effects in action! 🌪️
+
+---
 
 ## API Endpoints
 
 ### Matches
-- `POST /api/matches` - Create a new match
-- `GET /api/matches` - List matches for a player
-- `GET /api/matches/:id` - Get match details
-- `GET /api/matches/:id/story` - Get narrative match summary
+- `POST /api/matches` - Create match
+- `GET /api/matches?player_name=X` - List matches
+- `GET /api/matches/:id` - Get details
+- `GET /api/matches/:id/story` - Get narrative story
 
-### Statistics
-- `GET /api/stats/summary` - Get player stats summary
-- `GET /api/stats/by-killer` - Stats by killer type
-- `GET /api/stats/by-map` - Stats by map
+### Statistics  
+- `GET /api/stats/summary?player_name=X` - Player summary
+- `GET /api/stats/by-killer?player_name=X` - Killer breakdown
+- `GET /api/stats/by-map?player_name=X` - Map breakdown
 
 ### Builds
-- `POST /api/builds/analyze` - Analyze build against killer
-- `GET /api/builds` - Get saved builds
-- `POST /api/builds` - Save a build
+- `POST /api/builds/analyze` - Analyze build
+- `GET /api/builds?player_name=X` - List builds
+- `POST /api/builds` - Save build
 
-## Data Schema
+### Reference Data
+- `GET /api/reference/killers` - All killers
+- `GET /api/reference/maps` - All maps
+- `GET /api/reference/perks?type=Survivor` - All perks
 
-### Matches Table
-- `id` - Unique match identifier
-- `player_name` - Player name
-- `killer` - Killer type
-- `map` - Map name
-- `outcome` - escape/die/sacrifice
-- `duration_seconds` - Match duration
-- `first_hook_seconds` - Time to first hook
-- `total_hooks` - Number of hooks
-- `generator_progress` - % contribution to generators
-- `total_heals` - Number of heals
-- `total_totems` - Totems cleansed
-- `created_at` - Timestamp
+**Swagger UI:** http://localhost:3000/api-docs
 
-### Builds Table
-- `id` - Unique build identifier
-- `player_name` - Player name
-- `perks` - Array of perk names
-- `killer_type` - Killer the build is for
-- `win_rate` - Historical win rate
-- `sample_size` - Number of matches
+---
 
-### Killer Encounters Table
-- `id` - Unique encounter identifier
-- `player_name` - Player name
-- `killer_name` - Killer name
-- `perks` - Killer's perks
-- `encounters` - Number of times encountered
-- `win_count` - Wins against this killer
+## Design System
 
-## Development
+### Ink & Iron Glow Architecture
+- **Color Palette** - DBD-optimized (blood red, entity purple, hope cyan)
+- **Typography** - Lilita One (headlines) + Barlow (UI) + JetBrains Mono (data)
+- **Spacing** - 4px grid base
+- **Motion** - FLUBBER's playful splatters with adaptive triggering
 
-- `npm run dev` - Start with hot reload
-- `npm start` - Start production server
-- `npm run db:init` - Initialize database
+### SPLATTER Motion Effects
+```jsx
+<RippleButton>Click ripple</RippleButton>
+<StaggerList>Cascade stats</StaggerList>
+<BeamHighlight>Spinning border</BeamHighlight>
+<WipeReveal>Sliding text</WipeReveal>
+<EnergyBar>Progress bar</EnergyBar>
+<OrbitLoader>Loading spinner</OrbitLoader>
+```
 
-## Project Status
+**Adaptive Modes:**
+- **Auto** - Continuous for touch displays
+- **Click** - Triggered for mouse users
+- **Gesture** - Touch gesture support
 
-**Phase 1 (MVP)**: Backend API + data persistence
-- ✓ OpenAPI-compliant REST API
-- ✓ PostgreSQL schema
-- ✓ Match creation and retrieval
-- ✓ Statistics aggregation
-- ✓ Build analysis
-- [ ] Electron desktop app with OCR
-- [ ] React dashboard
-- [ ] Real-time match capture
+---
 
-**Phase 2**: OCR integration and desktop app
-**Phase 3**: Web dashboard and visualizations
+## Project Phases
+
+### Phase 1 ✅ COMPLETE
+- [x] Backend API (OpenAPI 3.0)
+- [x] PostgreSQL schema + seeding
+- [x] React dashboard with all views
+- [x] SPLATTER motion library
+- [x] Design tokens (Ink & Iron Glow + FLUBBER)
+
+### Phase 2 🚀 NEXT
+- [ ] Tesseract.js OCR integration
+- [ ] Electron desktop app
+- [ ] Live screen capture
+- [ ] Real-time match parsing
+- [ ] In-game overlay
+
+### Phase 3 📈 FUTURE
+- [ ] Advanced visualizations (heatmaps, graphs)
+- [ ] Build tier system
+- [ ] Team analysis
+- [ ] Historical trends
+- [ ] Cloud sync
+
+---
+
+## Development Scripts
+
+```bash
+npm install           # Install dependencies
+npm start             # Start backend (port 3000)
+npm run dev           # Start frontend dev server (port 5173)
+npm run db:init       # Initialize database schema
+npm run db:seed       # Seed reference data
+npm run db:setup      # Init + seed (shortcut)
+npm test              # Run quick demo
+```
+
+---
+
+## Project Structure
+
+```
+DAILITE/
+├── server.js                    # Express backend
+├── routes/                      # API endpoints
+│   ├── matches.js
+│   ├── stats.js
+│   ├── builds.js
+│   └── reference.js
+├── lib/
+│   ├── splatter-motion.js       # Core motion library
+│   └── splatter-components.jsx  # React wrappers
+├── components/
+│   └── Dashboard.jsx            # Main app component
+├── styles/
+│   ├── design-tokens.css        # IIG + FLUBBER tokens
+│   └── dashboard.css            # Component styles
+├── scripts/
+│   ├── init-db.js               # Schema setup
+│   └── seed-wiki-data.js        # Reference data
+└── demo-splatter.html           # Motion effects demo
+```
+
+---
+
+## Concept Proof
+
+This is a **proof-of-concept** that advanced Dead by Daylight analytics isn't difficult to build:
+
+1. **Backend**: ✅ Done (1 day)
+2. **Design**: ✅ Done (using FLUBBER + IIG)
+3. **Motion**: ✅ Done (SPLATTER library)
+4. **Dashboard**: ✅ Done (React)
+5. **OCR**: → Next (Tesseract + screen capture)
+
+**Timeline:** Complete PoC in ~1 week with proper team.
+
+---
+
+## Design Credits
+
+- **IIG Design System** by @lootziffer666
+- **FLUBBER Motion Grammar** by @lootziffer666
+- **DAILITE Analytics** by Claude
+
+---
 
 ## License
 
-MIT
+MIT - Build, remix, ship. DBD players deserve better analytics tools.
+
+---
+
+**Question for the dev who said this is hard:** 🤔  
+Check the branch. This is what "only OCR" can do when you actually think about it.
+
+**Next challenge:** Live OCR + in-game overlay. Still think it's hard?
