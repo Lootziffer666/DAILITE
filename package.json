@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
+    "electron": "electron electron/main.js",
+    "app": "npm run db:setup && npm run electron",
     "db:init": "node scripts/init-db.js",
     "db:seed": "node scripts/seed-wiki-data.js",
     "db:setup": "npm run db:init && npm run db:seed",
@@ -17,7 +19,8 @@
     "pg": "^8.10.0",
     "dotenv": "^16.3.1",
     "swagger-ui-express": "^5.0.0",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "electron": "^27.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAILITE - Dead by Daylight Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📊 DAILITE</h1>
+      <p>Dead by Daylight Analytics</p>
+    </header>
+
+    <main>
+      <!-- Status Panel -->
+      <div class="panel">
+        <h2>Match Status</h2>
+        <div id="status" class="status-idle">Waiting...</div>
+      </div>
+
+      <!-- Match Setup -->
+      <div class="panel">
+        <h2>Start Dummy Match</h2>
+        <input type="text" id="playerName" placeholder="Your name" value="TestPlayer">
+        <button id="startBtn" onclick="startDummyMatch()">🎮 Simulate Match</button>
+      </div>
+
+      <!-- Live Match Data -->
+      <div class="panel">
+        <h2>Live Data</h2>
+        <div id="matchData" class="match-data">
+          <div class="stat">
+            <span>Killer:</span>
+            <strong id="killerName">-</strong>
+          </div>
+          <div class="stat">
+            <span>Duration:</span>
+            <strong id="duration">0m 0s</strong>
+          </div>
+          <div class="stat">
+            <span>First Hook:</span>
+            <strong id="firstHook">-</strong>
+          </div>
+          <div class="stat">
+            <span>Generators:</span>
+            <strong id="generators">0%</strong>
+          </div>
+          <div class="stat">
+            <span>Hooks:</span>
+            <strong id="hooks">0</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Summary -->
+      <div class="panel">
+        <h2>Stats Summary</h2>
+        <button onclick="loadPlayerStats()">📈 Load Stats</button>
+        <div id="statsData" class="stats-data"></div>
+      </div>
+
+      <!-- Reference Data -->
+      <div class="panel">
+        <h2>Reference Data</h2>
+        <button onclick="loadKillers()">👹 Load Killers</button>
+        <button onclick="loadPerks()">🔮 Load Perks</button>
+        <div id="referenceData" class="reference-data"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>API: http://localhost:3000</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
