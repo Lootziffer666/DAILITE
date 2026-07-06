@@ -1,0 +1,273 @@
+{
+  "version": "2026-07-06",
+  "meta_snapshot": {
+    "timestamp": "2026-07",
+    "source": "BHVR Forums Community Research",
+    "average_kill_rate": 0.57,
+    "target_kill_rate": 0.60,
+    "note": "Data from community-compiled Nightlight analytics and forum discussions"
+  },
+  "killers_extended": {
+    "THE NURSE": {
+      "tier": "S",
+      "skill_floor": "Extreme",
+      "kill_rate": "Variable",
+      "pick_rate": 0.02,
+      "mmr_dependent": true,
+      "notes": "Weak at low MMR, strongest at high MMR. Extreme skill ceiling.",
+      "recommendation": "Only pick if experienced. Devastating at high MMR."
+    },
+    "THE NIGHTMARE": {
+      "tier": "A",
+      "skill_floor": "Medium",
+      "kill_rate": 0.56,
+      "pick_rate": 0.03,
+      "notes": "Consistent mid-tier performer. Reliable kill rate.",
+      "recommendation": "Solid choice for consistent performance."
+    },
+    "THE SHAPE": {
+      "tier": "A",
+      "skill_floor": "Medium",
+      "kill_rate": 0.54,
+      "pick_rate": 0.0587,
+      "notes": "Most picked killer (5.87%). Tier list consensus: strong.",
+      "recommendation": "Meta pick. Strong across all MMR levels."
+    },
+    "SPRINGTRAP": {
+      "tier": "A",
+      "skill_floor": "Medium",
+      "kill_rate": 0.55,
+      "pick_rate": 0.0535,
+      "notes": "Second most picked (5.35%). Consistent performance.",
+      "recommendation": "Strong meta choice."
+    },
+    "THE GHOUL": {
+      "tier": "A",
+      "skill_floor": "Medium-High",
+      "kill_rate": 0.54,
+      "pick_rate": 0.0528,
+      "notes": "Third most picked (5.28%). Modern meta killer.",
+      "recommendation": "Strong in current patch."
+    },
+    "THE HUNTRESS": {
+      "tier": "B",
+      "skill_floor": "High",
+      "kill_rate": 0.52,
+      "pick_rate": 0.0509,
+      "notes": "Fourth most picked (5.09%). Requires good aim.",
+      "recommendation": "Pick if confident with projectiles."
+    },
+    "THE DEATHSLINGER": {
+      "tier": "D",
+      "skill_floor": "High",
+      "kill_rate": 0.41,
+      "pick_rate": 0.015,
+      "notes": "Lowest kill rate (41%). Significantly underpowered.",
+      "recommendation": "Avoid unless you enjoy the challenge. Needs buffs from developers."
+    },
+    "THE WRAITH": {
+      "tier": "B",
+      "skill_floor": "Low",
+      "kill_rate": 0.51,
+      "pick_rate": 0.025,
+      "notes": "Beginner-friendly. Moderate effectiveness."
+    },
+    "THE HILLBILLY": {
+      "tier": "B",
+      "skill_floor": "High",
+      "kill_rate": 0.50,
+      "pick_rate": 0.020,
+      "notes": "High skill ceiling. Mediocre kill rate."
+    },
+    "THE TRAPPER": {
+      "tier": "C",
+      "skill_floor": "High",
+      "kill_rate": 0.48,
+      "pick_rate": 0.018,
+      "notes": "Setup-dependent. Punished by experienced survivors."
+    },
+    "THE DOCTOR": {
+      "tier": "C",
+      "skill_floor": "Medium",
+      "kill_rate": 0.49,
+      "pick_rate": 0.019,
+      "notes": "Information-focused. Inconsistent results."
+    },
+    "THE PIG": {
+      "tier": "C",
+      "skill_floor": "Medium-High",
+      "kill_rate": 0.47,
+      "pick_rate": 0.017,
+      "notes": "RNG-dependent. Unreliable mid-game."
+    },
+    "THE CANNIBAL": {
+      "tier": "B",
+      "skill_floor": "Medium",
+      "kill_rate": 0.52,
+      "pick_rate": 0.021,
+      "notes": "Solid close-range killer."
+    },
+    "THE CLOWN": {
+      "tier": "C",
+      "skill_floor": "Medium",
+      "kill_rate": 0.48,
+      "pick_rate": 0.016,
+      "notes": "Outclassed by other chase killers."
+    },
+    "THE SPIRIT": {
+      "tier": "A",
+      "skill_floor": "High",
+      "kill_rate": 0.55,
+      "pick_rate": 0.028,
+      "notes": "Strong at high MMR. Requires map knowledge."
+    },
+    "THE LEGION": {
+      "tier": "D",
+      "skill_floor": "Low",
+      "kill_rate": 0.42,
+      "pick_rate": 0.014,
+      "notes": "Lowest tier. Minimal map pressure."
+    },
+    "THE PLAGUE": {
+      "tier": "B",
+      "skill_floor": "Medium-High",
+      "kill_rate": 0.51,
+      "pick_rate": 0.022,
+      "notes": "Powerful with corruption. Relies on survivor mistakes."
+    },
+    "THE ONI": {
+      "tier": "A",
+      "skill_floor": "High",
+      "kill_rate": 0.54,
+      "pick_rate": 0.025,
+      "notes": "Strong map pressure. Skill-based."
+    },
+    "THE ARTIST": {
+      "tier": "A",
+      "skill_floor": "Medium-High",
+      "kill_rate": 0.55,
+      "pick_rate": 0.024,
+      "notes": "Powerful anti-loop. Top tier zoning."
+    },
+    "THE CENOBITE": {
+      "tier": "B",
+      "skill_floor": "Medium",
+      "kill_rate": 0.52,
+      "pick_rate": 0.020,
+      "notes": "Chain hunt provides map pressure."
+    }
+  },
+  "map_balance": {
+    "balanced_maps": [
+      "RPD East Wing",
+      "Macmillan Estate - Coal Tower",
+      "Coldwind Farm - Torment Creek"
+    ],
+    "killer_sided": [
+      {
+        "name": "RPD West Wing",
+        "advantage": "Strong 3-gen potential",
+        "difficulty": "Hard for survivors"
+      },
+      {
+        "name": "Coldwind Farm - Rancid Abattoir",
+        "advantage": "Massive dead zones",
+        "difficulty": "Very hard for survivors"
+      },
+      {
+        "name": "Haddonfield",
+        "advantage": "Difficult 3-gen spawns",
+        "difficulty": "Hard for survivors"
+      }
+    ],
+    "survivor_sided": [
+      {
+        "name": "Eyrie of Crows",
+        "advantage": "Resistant to balance nerfs, high pallet count",
+        "difficulty": "Easy for survivors"
+      },
+      {
+        "name": "The Game",
+        "advantage": "Highest pallet density in game",
+        "difficulty": "Very easy for survivors"
+      },
+      {
+        "name": "Gas Heaven",
+        "advantage": "Survivor-biased spawns",
+        "difficulty": "Easy for survivors"
+      }
+    ]
+  },
+  "perk_meta": {
+    "survivor_tier_1": [
+      {
+        "name": "DEAD HARD",
+        "category": "Exhaustion",
+        "effectiveness": "Overtuned",
+        "meta_status": "Mandatory",
+        "impact": "Chase extension, escape tool"
+      },
+      {
+        "name": "SPRINT BURST",
+        "category": "Exhaustion",
+        "effectiveness": "Overtuned",
+        "meta_status": "Mandatory",
+        "impact": "Early chase protection"
+      },
+      {
+        "name": "DECISIVE STRIKE",
+        "category": "Anti-Tunnel",
+        "effectiveness": "Very Strong",
+        "meta_status": "Mandatory",
+        "impact": "Tunnel prevention"
+      }
+    ],
+    "killer_problematic": [
+      {
+        "name": "PAIN RESONANCE",
+        "effectiveness": "Overtuned",
+        "issue": "Unaffected by diminishing returns system",
+        "status": "Needs balance"
+      },
+      {
+        "name": "DEAD MAN'S SWITCH",
+        "effectiveness": "Overtuned",
+        "issue": "Unaffected by diminishing returns system",
+        "status": "Needs balance"
+      },
+      {
+        "name": "GRIM EMBRACE",
+        "effectiveness": "Overtuned",
+        "issue": "Unaffected by diminishing returns system",
+        "status": "Needs balance"
+      }
+    ]
+  },
+  "winrate_analysis": {
+    "mmr_dependent": true,
+    "low_mmr": {
+      "advantage": "Survivor",
+      "reason": "Weak killers struggle against coordinated survivors"
+    },
+    "high_mmr": {
+      "advantage": "Killer",
+      "reason": "Strong perks and map knowledge favor killer"
+    },
+    "community_stats": {
+      "killer_escape_rate": 0.50,
+      "survivor_escape_rate": 0.37,
+      "draws": 0.13,
+      "note": "Community-compiled from Nightlight (less reliable than official data)"
+    }
+  },
+  "recommendations_for_build_coach": [
+    "For low-MMR survivors: Recommend meta perks (Dead Hard, Sprint Burst, DS)",
+    "For high-MMR survivors: Recommend situational builds based on killer",
+    "For low-MMR killers: Recommend A-tier killers (Shape, Spirit, Oni)",
+    "For beginner killers: Recommend low-skill-floor killers (Wraith, Cannibal)",
+    "Warn when using D-tier killers (Legion, Deathslinger)",
+    "Map-aware build recommendations",
+    "Suggest perk swaps to counter meta",
+    "Track which perks helped/hurt in matches"
+  ]
+}

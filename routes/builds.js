@@ -1,11 +1,34 @@
 import express from 'express';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { pool } from '../server.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const router = express.Router();
+
+// Load balance meta data
+let balanceMeta = null;
+async function loadBalanceMeta() {
+  if (!balanceMeta) {
+    try {
+      const data = await fs.readFile(
+        path.join(__dirname, '../data/killer-balance-tiers.json'),
+        'utf-8'
+      );
+      balanceMeta = JSON.parse(data);
+    } catch (err) {
+      console.warn('Could not load balance meta data:', err.message);
+      balanceMeta = {};
+    }
+  }
+  return balanceMeta;
+}
 
 // POST: Analyze a build against killer type
 router.post('/analyze', async (req, res) => {
-  const { perks, killer_type, player_name } = req.body;
+  const { perks, killer_type, player_name, mmr } = req.body;
 
   if (!perks || !Array.isArray(perks) || perks.length === 0) {
     return res.status(400).json({ error: 'perks array required' });
@@ -16,6 +39,8 @@ router.post('/analyze', async (req, res) => {
   }
 
   try {
+    const meta = await loadBalanceMeta();
+
     // Get historical data for this build against this killer
     const result = await pool.query(
       `SELECT COUNT(*) as encounters,
@@ -29,12 +54,26 @@ router.post('/analyze', async (req, res) => {
     const escapes = parseInt(result.rows[0].escapes) || 0;
     const winRate = encounters > 0 ? ((escapes / encounters) * 100).toFixed(2) : 0;
 
+    const killerData = meta.killers_extended?.[killer_type.toUpperCase()] || {};
+    const metaPerkIssues = getMetaPerkIssues(perks, meta);
+
     const analysis = {
       perks,
       killer_type,
       sample_size: encounters,
       win_rate: parseFloat(winRate),
-      recommendation: generateRecommendation(parseFloat(winRate), encounters, perks, killer_type),
+      killer_tier: killerData.tier || 'Unknown',
+      killer_kill_rate: killerData.kill_rate || 'N/A',
+      meta_status: getMetaStatus(perks, meta),
+      perk_issues: metaPerkIssues,
+      recommendation: generateRecommendation(
+        parseFloat(winRate),
+        encounters,
+        perks,
+        killer_type,
+        killerData,
+        mmr
+      ),
     };
 
     res.json(analysis);
@@ -88,18 +127,67 @@ router.post('/', async (req, res) => {
   }
 });
 
-function generateRecommendation(winRate, sampleSize, perks, killerType) {
+function getMetaStatus(perks, meta) {
+  const tierOne = meta.perk_meta?.survivor_tier_1?.map(p => p.name.toUpperCase()) || [];
+  const matching = perks.filter(p => tierOne.includes(p.toUpperCase()));
+  return {
+    has_meta_perks: matching.length,
+    tier_one_count: tierOne.length,
+    coverage: ((matching.length / Math.max(matching.length, 1)) * 100).toFixed(0) + '%',
+  };
+}
+
+function getMetaPerkIssues(perks, meta) {
+  const problematic = meta.perk_meta?.killer_problematic?.map(p => p.name.toUpperCase()) || [];
+  const issues = [];
+
+  perks.forEach(perk => {
+    if (problematic.includes(perk.toUpperCase())) {
+      issues.push({
+        perk,
+        issue: 'This perk is currently overtuned in the meta',
+        impact: 'High - May face killer perks designed to counter this'
+      });
+    }
+  });
+
+  return issues;
+}
+
+function generateRecommendation(winRate, sampleSize, perks, killerType, killerData, mmr) {
+  let recommendation = '';
+
+  // Sample size check
   if (sampleSize < 5) {
-    return `Not enough data (${sampleSize} matches). Play more matches with this build to get better recommendations.`;
+    recommendation += `📊 Not enough data (${sampleSize} matches). Play more for better insights.\n`;
   }
 
-  if (winRate >= 60) {
-    return `Great matchup! You have a ${winRate}% escape rate against ${killerType} with this build. Keep using it.`;
-  } else if (winRate >= 40) {
-    return `Moderate success. Consider adjusting perks or playstyle against ${killerType}. Win rate: ${winRate}%.`;
-  } else {
-    return `This build struggles against ${killerType} (${winRate}% win rate). Consider trying different perks.`;
+  // Killer tier assessment
+  if (killerData.tier === 'D') {
+    recommendation += `⚠️ ${killerType} is low-tier (${killerData.kill_rate}% KR). This will be challenging.\n`;
+  } else if (killerData.tier === 'S') {
+    recommendation += `🔥 ${killerType} is top-tier. Strong killer choice.\n`;
   }
+
+  // Win rate assessment
+  if (winRate >= 60) {
+    recommendation += `✅ Great matchup! ${winRate}% escape rate against ${killerType}. Keep this build.\n`;
+  } else if (winRate >= 50) {
+    recommendation += `👍 Solid performance. ${winRate}% escape rate - this build works.\n`;
+  } else if (winRate >= 40) {
+    recommendation += `⚠️ Moderate success (${winRate}%). Consider tweaking for ${killerType}.\n`;
+  } else {
+    recommendation += `❌ Struggling (${winRate}%). Try different perks against ${killerType}.\n`;
+  }
+
+  // MMR-specific advice
+  if (mmr === 'low') {
+    recommendation += `💡 At low MMR: Use meta perks (Dead Hard, Sprint Burst, DS) for safety.\n`;
+  } else if (mmr === 'high') {
+    recommendation += `💡 At high MMR: Consider situational perks over meta for flexibility.\n`;
+  }
+
+  return recommendation.trim();
 }
 
 export default router;

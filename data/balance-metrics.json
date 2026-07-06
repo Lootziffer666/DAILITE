@@ -1,0 +1,139 @@
+{
+  "version": "2026-07-06",
+  "source": "BHVR Forums Community Research",
+  "note": "Data compiled from community discussions and Nightlight analytics",
+  "killers": {
+    "meta": {
+      "target_kill_rate": 0.60,
+      "current_average": 0.57,
+      "note": "60% kill rate = 50% win rate (accounting for hatch)"
+    },
+    "performance": {
+      "THE NIGHTMARE": {
+        "kill_rate": 0.56,
+        "tier": "A",
+        "notes": "Consistent mid-tier performer"
+      },
+      "THE NURSE": {
+        "kill_rate": "variable",
+        "tier": "S",
+        "notes": "Extreme skill ceiling - weak at low MMR, strongest at high MMR",
+        "mmr_dependent": true
+      },
+      "THE SHAPE": {
+        "pick_rate": 0.0587,
+        "tier": "A",
+        "notes": "Top pick rate (5.87%)"
+      },
+      "SPRINGTRAP": {
+        "pick_rate": 0.0535,
+        "tier": "A",
+        "notes": "Second most picked (5.35%)"
+      },
+      "THE GHOUL": {
+        "pick_rate": 0.0528,
+        "tier": "A",
+        "notes": "Third most picked (5.28%)"
+      },
+      "THE HUNTRESS": {
+        "pick_rate": 0.0509,
+        "tier": "B",
+        "notes": "Fourth most picked (5.09%)"
+      },
+      "THE DEATHSLINGER": {
+        "kill_rate": 0.41,
+        "tier": "D",
+        "notes": "Lowest kill rate performer - needs buffs"
+      }
+    }
+  },
+  "maps": {
+    "balanced": [
+      "RPD East Wing",
+      "Macmillan Estate - Coal Tower",
+      "Coldwind Farm - Torment Creek"
+    ],
+    "killer_sided": [
+      {
+        "name": "RPD West Wing",
+        "advantage": "Strong 3-gen potential"
+      },
+      {
+        "name": "Coldwind Farm - Rancid Abattoir",
+        "advantage": "Massive dead zones"
+      },
+      {
+        "name": "Haddonfield",
+        "advantage": "Difficult 3-gen spawns for survivors"
+      }
+    ],
+    "survivor_sided": [
+      {
+        "name": "Eyrie of Crows",
+        "advantage": "Resistant to balance nerfs, high pallet count"
+      },
+      {
+        "name": "The Game",
+        "advantage": "Highest pallet density in game"
+      },
+      {
+        "name": "Gas Heaven",
+        "advantage": "Historically survivor-biased spawns"
+      }
+    ]
+  },
+  "perks": {
+    "survivor_meta": {
+      "tier_1": [
+        "DEAD HARD",
+        "SPRINT BURST",
+        "DECISIVE STRIKE"
+      ],
+      "notes": "Not using these is considered 'soft trolling' by community"
+    },
+    "killer_issues": {
+      "overtuned": [
+        "PAIN RESONANCE",
+        "DEAD MAN'S SWITCH",
+        "GRIM EMBRACE"
+      ],
+      "notes": "These perks unaffected by diminishing returns system",
+      "balance_approach_debate": "Nerf overpowered perks vs buff weak killers"
+    }
+  },
+  "balance_state": {
+    "overall": "Contested - varies significantly by MMR",
+    "low_mmr": {
+      "advantage": "Survivor",
+      "notes": "Weak killers struggle against coordinated survivors"
+    },
+    "high_mmr": {
+      "advantage": "Killer",
+      "notes": "Especially with SWF (Survive With Friends) coordination"
+    },
+    "winrate_imbalance": {
+      "killers_escape_rate": 0.50,
+      "survivors_escape_rate": 0.37,
+      "draws": "remainder",
+      "notes": "Community-compiled from Nightlight data"
+    },
+    "developer_philosophy": "Game designed to be 60/40 killer-sided"
+  },
+  "statistics_reliability": {
+    "official_data": "Limited - BHVR does not publish comprehensive stats",
+    "community_sources": {
+      "nightlight": "User-submitted data - less reliable but most comprehensive",
+      "methodological_concerns": "Sampling bias, incomplete data collection"
+    }
+  },
+  "recommendations_for_dailite": [
+    "Build meta tier list into Build Coach",
+    "Map balance awareness in match analytics",
+    "Killer tier recommendations based on current meta",
+    "Win rate tracking by killer and map combination",
+    "Perk effectiveness scoring vs community consensus",
+    "MMR-aware build suggestions (different for low vs high MMR)",
+    "Track pick rates to identify meta shifts",
+    "Suggest balanced builds when using underpowered killers/perks"
+  ]
+}
