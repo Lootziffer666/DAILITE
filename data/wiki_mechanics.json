@@ -1,0 +1,165 @@
+{
+  "generators": {
+    "total_generators_per_match": {
+      "value": 7,
+      "condition": "Standard ranked Trial (default 4 Survivors)",
+      "quote": "A regular ranked Trial spawns a total of 7 Generators in predetermined locations.",
+      "varies": true,
+      "variation_notes": "In Custom Games with fewer than 4 Survivors, generator spawn count = number of Survivors + 3 (per wiki: 'the amount of Generators spawning throughout the Map is adjusted to be three more than the number of Survivors starting the Trial'). In the 2v8 mode, maps spawn a total of 13 Generators.",
+      "source_confidence": "high - direct quote from Generators wiki page (https://deadbydaylight.wiki.gg/wiki/Generators)"
+    },
+    "generators_required_to_power_exit_gates": {
+      "value": 5,
+      "condition": "Standard 4-Survivor Trial",
+      "quote": "Survivors must repair a total of 5 Generators in order to power the Exit Gates.",
+      "formula": "Number of Survivors starting the Trial + 1 (per the Exit Gates page: 'Survivors must repair a certain number of Generators (equal to Survivors starting the Trial + 1) to power the Exit Gate Switches'). For every Survivor fewer than the default 4, one fewer Generator is required.",
+      "special_mode_exception": "2v8 mode requires 8 of the 13 spawned Generators to be repaired (not simply Survivors+1, i.e. not 9).",
+      "additional_trigger": "Exit Gates also become powered if the Killer closes the Hatch, regardless of Generators completed.",
+      "source_confidence": "high - directly quoted from both Generators and Exit Gates wiki pages"
+    },
+    "charges_to_fully_repair": {
+      "value": 90,
+      "quote": "By default, Generators require 90 Charges in order to become fully repaired.",
+      "changed_across_patches": "Not stated in the fetched page content - no changelog entries for this value were found in the excerpt retrieved.",
+      "source_confidence": "high - direct quote, but patch history for this specific number was not visible in the fetched content"
+    },
+    "base_repair_speed": {
+      "value": "+1 charge per second (c/s) per Survivor, solo",
+      "solo_completion_time_seconds": 90,
+      "quote": "Survivors add charges at a default rate of +1 c/s.",
+      "multi_survivor_note": "Each additional Survivor repairing the same Generator adds efficiency but with a diminishing-returns penalty (~15% individual efficiency loss per extra Survivor); approximate combined times reported: 2 Survivors ~52.94s, 3 Survivors ~42.86s, 4 Survivors ~40.91s to fully repair one Generator together.",
+      "source_confidence": "high - direct quote from Generators wiki page"
+    },
+    "kick_and_regression_mechanics": {
+      "kick_action_time_seconds": 1.8,
+      "kick_immediate_progress_loss_percent": 5,
+      "quote_kick": "kicking a Generator takes 1.8 seconds and causes it to lose an immediate -5% of its total Progression.",
+      "regression_rate": "-0.25 charges per second (c/s) while regressing",
+      "regression_event_limit": "8 times - each Generator has a limit of 8 Regression Events it can experience",
+      "grace_to_stop_regression": "Repairing for a minimum of +5% progress halts/resets the regression state",
+      "source_confidence": "high - direct quotes from Generators wiki page",
+      "changed_across_patches": "Not stated in the fetched excerpt; no historical values for kick/regression numbers were surfaced."
+    }
+  },
+  "hooks": {
+    "total_hooks_per_match": {
+      "value": "Not given as a fixed number or explicit min/max range in the fetched content",
+      "notes": "The wiki states hook spawn count scales with map size: 'The number of Hooks spawning in the environment is now based on the number of map tiles divided by three' (Patch 2.0.0), and 'All Maps now feature a minimum and maximum number of Hooks that they can spawn' (Patch 2.5.0) - but exact per-map numbers were not present in the fetched excerpt.",
+      "source_confidence": "medium - the page confirms a variable/map-dependent count exists but does not give the concrete range in the content retrieved; this contradicts a simple fixed constant assumption and should not be hard-coded as one number"
+    },
+    "basement_hooks": {
+      "value": 4,
+      "quote": "The Basement contains a special set of four indestructible Hooks, all hanging from one central post.",
+      "notes": "Confirmed both on the Hooks page ('The Basement Hooks are a unique set of four Hooks attached to a single post located in the Basement') and independently on the dedicated Basement page. This is higher than the commonly assumed figure of 2 - flagging as a fact worth double-checking against in-game observation, though it is what the wiki explicitly states.",
+      "source_confidence": "medium-high - consistent exact quote across two separate wiki pages, but conflicts with a widely-held (non-wiki) assumption of 2 basement hooks, so noting the discrepancy for awareness"
+    },
+    "hook_stages_before_sacrifice": {
+      "value": 3,
+      "stages": [
+        {"stage": 1, "name": "Struggle Phase (first stage)", "duration_seconds": 70, "progress_range": "100% to 51%"},
+        {"stage": 2, "name": "Struggle Phase (second stage)", "duration_seconds": 70, "progress_range": "50% to 1%"},
+        {"stage": 3, "name": "Sacrifice", "duration_seconds": "instantaneous", "progress_range": "0%"}
+      ],
+      "confirms_app_assumption": "Matches DAILITE's current assumption of 3 hook stages.",
+      "source_confidence": "high - direct quote from Hooks wiki page"
+    },
+    "hook_stage_timing": {
+      "current_duration_per_stage_seconds": 70,
+      "changed_across_patches": true,
+      "history": [
+        {"patch": "1.5.3", "change": "Duration increased from 45 seconds to 60 seconds"},
+        {"patch": "8.2.0", "change": "Duration increased from 60 seconds to 70 seconds"}
+      ],
+      "source_confidence": "high - direct quotes with patch numbers from Hooks wiki page changelog"
+    },
+    "2v8_mode_note": {
+      "notes": "2v8 mode replaces Hooks with 'Cages of Corruption' which have a reduced total Sacrifice timer of 120 seconds (60 seconds per Cage State) - different from standard 2x70s hook stage timing.",
+      "source_confidence": "high - direct quote from 2v8 wiki page"
+    }
+  },
+  "totems": {
+    "totems_per_match": {
+      "value": 5,
+      "quote": "All Trials spawn with 5 Totems in random locations, usually hidden against environmental objects and in nooks and crannies.",
+      "changed_across_patches": "No changelog content confirming historical changes was found in the fetched excerpt (Change Log section exists in the page's table of contents but its content was not present in the retrieved excerpt).",
+      "source_confidence": "high for the current value; unknown/unconfirmed whether it changed historically since changelog content wasn't retrieved"
+    },
+    "dull_vs_hex_totems": {
+      "dull_totem": "Unlit totems found throughout the environment; this is the default state of a Totem unless a Killer is running one or more Hex perks.",
+      "hex_totem": "A special kind of Totem identifiable by lit candles underneath it. Hex Totems are tied to a specific Hex perk's effect; if a Survivor cleanses/breaks it, the associated Hex perk effect ends.",
+      "quote": "Hex Totems are a special kind of Totem, identifiable by the lit candles underneath them.",
+      "source_confidence": "high - direct quote from Totem wiki page"
+    },
+    "max_active_hex_totems": {
+      "value": "Not explicitly stated as a numeric cap on the page",
+      "notes": "The page does not specify a maximum number of simultaneously active Hex Totems. Since a Trial only spawns 5 Totems total, and each active Hex perk consumes one, the practical upper bound is limited by (a) the Killer's 4-perk loadout and (b) the 5 Totems available - but no explicit stated cap like 'max 4 hexes' was found in the fetched content.",
+      "source_confidence": "medium - inferred from the 5-totems-per-match fact and general perk-slot logic, not from an explicit statement on the page; do not hard-code a cap number without further verification"
+    }
+  },
+  "gates_and_hatch": {
+    "exit_gates_per_match": {
+      "value": 2,
+      "quote": "All regular Maps spawn with 2 Exit Gates, which are located randomly in the outer border wall surrounding the perimeter of the Map.",
+      "special_mode_exception": {
+        "mode": "2v8",
+        "value": 3,
+        "quote": "The supersized Maps used in 2v8 Trials spawn with an additional Exit Gate, raising their number to 3."
+      },
+      "source_confidence": "high - direct quotes from Exit Gates wiki page"
+    },
+    "exit_gate_power_condition": {
+      "primary_condition": "Repairing the required number of Generators (Survivors starting the Trial + 1; 5 for a standard 4-Survivor Trial).",
+      "secondary_condition": "Exit Gates also become powered when the Killer closes the Hatch, regardless of how many Generators have been completed.",
+      "quote": "Survivors must repair a certain number of Generators (equal to Survivors starting the Trial + 1) to power the Exit Gate Switches.",
+      "opening_time_current_seconds": 20,
+      "opening_time_history": "Patch 1.5.0 increased opening time from 15 seconds to 20 seconds.",
+      "source_confidence": "high - direct quotes from Exit Gates wiki page"
+    },
+    "hatch": {
+      "count_per_match": {
+        "value": 1,
+        "notes": "Only one Hatch spawns per Trial, in a random pre-determined location.",
+        "source_confidence": "high"
+      },
+      "current_spawn_condition": {
+        "value": "Becomes visible and automatically opens only when exactly one Survivor remains alive in the Trial.",
+        "quote": "The Hatch only becomes visible, and automatically opens, when there is only a single Survivor left alive in the Trial.",
+        "effective_since_patch": "5.3.0 (this patch refined visibility to only the last Survivor)",
+        "source_confidence": "high - direct quote from Hatch wiki page"
+      },
+      "historical_spawn_conditions": {
+        "changed_across_patches": true,
+        "history": [
+          {
+            "period": "Pre-2.7.0",
+            "condition": "Hatch only spawned/opened if at least 2 Generators were repaired (in addition to being the last-ish survivor state)."
+          },
+          {
+            "patch": "2.7.0",
+            "change": "Hatch now always spawns and opens when there is only one last Survivor remaining in the Trial (previously required at least 2 repaired Generators)."
+          },
+          {
+            "period": "Between 2.7.0 and 5.3.0",
+            "condition": "Formula-based visibility: Hatch became visible to all players once Number of completed Generators = Number of alive Survivors + 1 (e.g. 4 alive => 5 gens; 3 alive => 4 gens; 2 alive => 3 gens).",
+            "quote": "The Hatch became visible to all Players after the following condition were met: Number of completed Generators = Number of alive Survivors + 1"
+          },
+          {
+            "patch": "5.3.0",
+            "change": "Hatch now only becomes visible to the last Survivor alive in a Trial (current mechanic)."
+          }
+        ],
+        "source_confidence": "high - directly quoted patch history from Hatch wiki page; illustrates that this mechanic has changed materially over time and DAILITE should use the current (5.3.0+) rule, not a generator-count-based rule"
+      }
+    }
+  },
+  "match_structure": {
+    "survivors_per_match": {
+      "standard_value": 4,
+      "quote": "1v4: the default Game Mode that pits 4 Survivors against 1 Killer.",
+      "confirms_app_assumption": "Matches DAILITE's current assumption of 4 Survivors for the standard/default mode.",
+      "always_true": false,
+      "variation_notes": "Not always true. Custom Games can run with fewer than 4 Survivors (generator counts scale accordingly, see generators.total_generators_per_match). The 2v8 limited-time Game Mode Modifier pits 8 Survivors against 2 Killers (10 total players) on supersized maps with different generator/exit-gate/hook(cage) counts.",
+      "source_confidence": "high - direct quotes from Trial and 2v8 wiki pages, cross-checked (an initial fetch mis-extracted 2v8 as '6 Survivors vs 2 Killers'; a follow-up targeted fetch confirmed the correct figure is 8 Survivors vs 2 Killers = 10 total, consistent with the mode's '2v8' name and the Trial page's independent statement)"
+    }
+  }
+}

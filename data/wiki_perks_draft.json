@@ -1,0 +1,1928 @@
+[
+ {
+  "name": "A Nurse's Calling",
+  "type": "Killer",
+  "teachable_by": "Nurse",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "A Place For Us",
+  "type": "Survivor",
+  "teachable_by": "Kwon Tae-young",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Ace in the Hole",
+  "type": "Survivor",
+  "teachable_by": "Ace Visconti",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Adrenaline",
+  "type": "Survivor",
+  "teachable_by": "Meg Thomas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Aftercare",
+  "type": "Survivor",
+  "teachable_by": "Jeffrey \"Jeff\" Johansen",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Agitation",
+  "type": "Killer",
+  "teachable_by": "Trapper",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Alert",
+  "type": "Survivor",
+  "teachable_by": "Feng Min",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Alien Instinct",
+  "type": "Killer",
+  "teachable_by": "Xenomorph",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "All-Shaking Thunder",
+  "type": "Killer",
+  "teachable_by": "Houndmaster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Any Means Necessary",
+  "type": "Survivor",
+  "teachable_by": "Yui Kimura",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Apocalyptic Ingenuity",
+  "type": "Survivor",
+  "teachable_by": "Rick Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Appraisal",
+  "type": "Survivor",
+  "teachable_by": "\u00c9lodie Rakoto",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Artefact Hunter",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Autodidact",
+  "type": "Survivor",
+  "teachable_by": "Adam Francis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Awakened Awareness",
+  "type": "Killer",
+  "teachable_by": "Mastermind",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Babysitter",
+  "type": "Survivor",
+  "teachable_by": "Steve Harrington",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Background Player",
+  "type": "Survivor",
+  "teachable_by": "Renato Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bada Bada Boom",
+  "type": "Survivor",
+  "teachable_by": "Dustin Henderson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Balanced Landing",
+  "type": "Survivor",
+  "teachable_by": "Nea Karlsson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bamboozle",
+  "type": "Killer",
+  "teachable_by": "Clown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Barbecue & Chilli",
+  "type": "Killer",
+  "teachable_by": "Cannibal",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bardic Inspiration",
+  "type": "Survivor",
+  "teachable_by": "Aestri Yazar & Baermar Uraz",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Batteries Included",
+  "type": "Killer",
+  "teachable_by": "Good Guy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Beast of Prey",
+  "type": "Killer",
+  "teachable_by": "Huntress",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Better than New",
+  "type": "Survivor",
+  "teachable_by": "Rebecca Chambers",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Better Together",
+  "type": "Survivor",
+  "teachable_by": "Nancy Wheeler",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bite the Bullet",
+  "type": "Survivor",
+  "teachable_by": "Leon Scott Kennedy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bitter Murmur",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Blast Mine",
+  "type": "Survivor",
+  "teachable_by": "Jill Valentine",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Blood Echo",
+  "type": "Killer",
+  "teachable_by": "Oni",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Blood Pact",
+  "type": "Survivor",
+  "teachable_by": "Cheryl Mason",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Blood Rush",
+  "type": "Survivor",
+  "teachable_by": "Renato Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Blood Warden",
+  "type": "Killer",
+  "teachable_by": "Nightmare",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bloodhound",
+  "type": "Killer",
+  "teachable_by": "Wraith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boil Over",
+  "type": "Survivor",
+  "teachable_by": "Kate Denson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bond",
+  "type": "Survivor",
+  "teachable_by": "Dwight Fairfield",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boon: Circle of Healing",
+  "type": "Survivor",
+  "teachable_by": "Mikaela Reid",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boon: Dark Theory",
+  "type": "Survivor",
+  "teachable_by": "Yoichi Asakawa",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boon: Exponential",
+  "type": "Survivor",
+  "teachable_by": "Jonah Vasquez",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boon: Illumination",
+  "type": "Survivor",
+  "teachable_by": "Alan Wake",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Boon: Shadow Step",
+  "type": "Survivor",
+  "teachable_by": "Mikaela Reid",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Borrowed Time",
+  "type": "Survivor",
+  "teachable_by": "William \"Bill\" Overbeck",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Botany Knowledge",
+  "type": "Survivor",
+  "teachable_by": "Claudette Morel",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Bound by Obsession",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Breakdown",
+  "type": "Survivor",
+  "teachable_by": "Jeffrey \"Jeff\" Johansen",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Breakout",
+  "type": "Survivor",
+  "teachable_by": "Yui Kimura",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Brutal Strength",
+  "type": "Killer",
+  "teachable_by": "Trapper",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Buckle Up",
+  "type": "Survivor",
+  "teachable_by": "Ashley J. Williams",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Built to Last",
+  "type": "Survivor",
+  "teachable_by": "Felix Richter",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Call of Brine",
+  "type": "Killer",
+  "teachable_by": "Onry\u014d",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Calm Spirit",
+  "type": "Survivor",
+  "teachable_by": "Jake Park",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Camaraderie",
+  "type": "Survivor",
+  "teachable_by": "Steve Harrington",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Champion of Light",
+  "type": "Survivor",
+  "teachable_by": "Alan Wake",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Change of Plan",
+  "type": "Survivor",
+  "teachable_by": "Dustin Henderson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Chemical Trap",
+  "type": "Survivor",
+  "teachable_by": "Ellen Ripley",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Clairvoyance",
+  "type": "Survivor",
+  "teachable_by": "Mikaela Reid",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Clean Break",
+  "type": "Survivor",
+  "teachable_by": "Taurie Cain",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Come and Get Me!",
+  "type": "Survivor",
+  "teachable_by": "Rick Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Conviction",
+  "type": "Survivor",
+  "teachable_by": "Michonne Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Corrective Action",
+  "type": "Survivor",
+  "teachable_by": "Jonah Vasquez",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Corrupt Intervention",
+  "type": "Killer",
+  "teachable_by": "Plague",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Coulrophobia",
+  "type": "Killer",
+  "teachable_by": "Clown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Counterforce",
+  "type": "Survivor",
+  "teachable_by": "Jill Valentine",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Coup de Gr\u00e2ce",
+  "type": "Killer",
+  "teachable_by": "Twins",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Cross-Examination",
+  "type": "Survivor",
+  "teachable_by": "Shane Wiigwaas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Cruel Limits",
+  "type": "Killer",
+  "teachable_by": "Demogorgon",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Cull the Weak",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Cut Loose",
+  "type": "Survivor",
+  "teachable_by": "Thalita Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dance With Me",
+  "type": "Survivor",
+  "teachable_by": "Kate Denson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dark Arrogance",
+  "type": "Killer",
+  "teachable_by": "Lich",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dark Devotion",
+  "type": "Killer",
+  "teachable_by": "Plague",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dark Sense",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Darkness Revealed",
+  "type": "Killer",
+  "teachable_by": "Dredge",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dead Hard",
+  "type": "Survivor",
+  "teachable_by": "David King",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dead Man's Switch",
+  "type": "Killer",
+  "teachable_by": "Deathslinger",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Deadline",
+  "type": "Survivor",
+  "teachable_by": "Alan Wake",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Deathbound",
+  "type": "Killer",
+  "teachable_by": "Executioner",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Deception",
+  "type": "Survivor",
+  "teachable_by": "\u00c9lodie Rakoto",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Deerstalker",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Deliverance",
+  "type": "Survivor",
+  "teachable_by": "Adam Francis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Desperate Measures",
+  "type": "Survivor",
+  "teachable_by": "Felix Richter",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Detective's Hunch",
+  "type": "Survivor",
+  "teachable_by": "Detective David Tapp",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Discordance",
+  "type": "Killer",
+  "teachable_by": "Legion",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dissolution",
+  "type": "Killer",
+  "teachable_by": "Dredge",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Distortion",
+  "type": "Survivor",
+  "teachable_by": "Jeffrey \"Jeff\" Johansen",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Distressing",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Diversion",
+  "type": "Survivor",
+  "teachable_by": "Adam Francis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Do No Harm",
+  "type": "Survivor",
+  "teachable_by": "Orela Rose",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dominance",
+  "type": "Killer",
+  "teachable_by": "Dark Lord",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Down to the Last",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dragon's Grip",
+  "type": "Killer",
+  "teachable_by": "Blight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Dramaturgy",
+  "type": "Survivor",
+  "teachable_by": "Nicolas Cage",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Duty of Care",
+  "type": "Survivor",
+  "teachable_by": "Orela Rose",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "D\u00e9j\u00e0 Vu",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Empathic Connection",
+  "type": "Survivor",
+  "teachable_by": "Yoichi Asakawa",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Empathy",
+  "type": "Survivor",
+  "teachable_by": "Claudette Morel",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Enduring",
+  "type": "Killer",
+  "teachable_by": "Hillbilly",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Eruption",
+  "type": "Killer",
+  "teachable_by": "Nemesis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Extrasensory Perception",
+  "type": "Survivor",
+  "teachable_by": "Eleven",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Exultation",
+  "type": "Survivor",
+  "teachable_by": "Trevor Belmont",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Eyes of Belmont",
+  "type": "Survivor",
+  "teachable_by": "Trevor Belmont",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Fast Track",
+  "type": "Survivor",
+  "teachable_by": "Lee Yun-jin",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Finesse",
+  "type": "Survivor",
+  "teachable_by": "Lara Croft",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Fire Up",
+  "type": "Killer",
+  "teachable_by": "Nightmare",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Five Moves Ahead",
+  "type": "Survivor",
+  "teachable_by": "Kwon Tae-young",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Fixated",
+  "type": "Survivor",
+  "teachable_by": "Nancy Wheeler",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Flashbang",
+  "type": "Survivor",
+  "teachable_by": "Leon Scott Kennedy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Flip-Flop",
+  "type": "Survivor",
+  "teachable_by": "Ashley J. Williams",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Flow State",
+  "type": "Survivor",
+  "teachable_by": "Kwon Tae-young",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Fogwise",
+  "type": "Survivor",
+  "teachable_by": "Vittorio Toscano",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "For the People",
+  "type": "Survivor",
+  "teachable_by": "Zarina Kassir",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Forced Hesitation",
+  "type": "Killer",
+  "teachable_by": "Singularity",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Forced Penance",
+  "type": "Killer",
+  "teachable_by": "Executioner",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Forever Entwined",
+  "type": "Killer",
+  "teachable_by": "Ghoul",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Franklin's Demise",
+  "type": "Killer",
+  "teachable_by": "Cannibal",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Friendly Competition",
+  "type": "Survivor",
+  "teachable_by": "Thalita Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Friends 'til the End",
+  "type": "Killer",
+  "teachable_by": "Good Guy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Furtive Chase",
+  "type": "Killer",
+  "teachable_by": "Ghost Face",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Game Afoot",
+  "type": "Killer",
+  "teachable_by": "Skull Merchant",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Gearhead",
+  "type": "Killer",
+  "teachable_by": "Deathslinger",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Genetic Limits",
+  "type": "Killer",
+  "teachable_by": "Singularity",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Ghost Notes",
+  "type": "Survivor",
+  "teachable_by": "Vee Boonyasak",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Grim Embrace",
+  "type": "Killer",
+  "teachable_by": "Artist",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hardened",
+  "type": "Survivor",
+  "teachable_by": "Lara Croft",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Haywire",
+  "type": "Killer",
+  "teachable_by": "Animatronic",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Head On",
+  "type": "Survivor",
+  "teachable_by": "Jane Romero",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Help Wanted",
+  "type": "Killer",
+  "teachable_by": "Animatronic",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Blood Favour",
+  "type": "Killer",
+  "teachable_by": "Blight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Crowd Control",
+  "type": "Killer",
+  "teachable_by": "Trickster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Devour Hope",
+  "type": "Killer",
+  "teachable_by": "Hag",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Face the Darkness",
+  "type": "Killer",
+  "teachable_by": "Knight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Fortune's Fool",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Haunted Ground",
+  "type": "Killer",
+  "teachable_by": "Spirit",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Hive Mind",
+  "type": "Killer",
+  "teachable_by": "First",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Huntress Lullaby",
+  "type": "Killer",
+  "teachable_by": "Huntress",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: No One Escapes Death",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Nothing but Misery",
+  "type": "Killer",
+  "teachable_by": "Ghoul",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Overture of Doom",
+  "type": "Killer",
+  "teachable_by": "Krasue",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Pentimento",
+  "type": "Killer",
+  "teachable_by": "Artist",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Retribution",
+  "type": "Killer",
+  "teachable_by": "Deathslinger",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Ruin",
+  "type": "Killer",
+  "teachable_by": "Hag",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Scared to Death",
+  "type": "Killer",
+  "teachable_by": "Slasher",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: The Third Seal",
+  "type": "Killer",
+  "teachable_by": "Hag",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Thrill of the Hunt",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Two Can Play",
+  "type": "Killer",
+  "teachable_by": "Good Guy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Undying",
+  "type": "Killer",
+  "teachable_by": "Blight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hex: Wretched Fate",
+  "type": "Killer",
+  "teachable_by": "Dark Lord",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hoarder",
+  "type": "Killer",
+  "teachable_by": "Twins",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hope",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hubris",
+  "type": "Killer",
+  "teachable_by": "Knight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Human Greed",
+  "type": "Killer",
+  "teachable_by": "Dark Lord",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hyperfocus",
+  "type": "Survivor",
+  "teachable_by": "Rebecca Chambers",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Hysteria",
+  "type": "Killer",
+  "teachable_by": "Nemesis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "I'm All Ears",
+  "type": "Killer",
+  "teachable_by": "Ghost Face",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "In the Dark",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Infectious Fright",
+  "type": "Killer",
+  "teachable_by": "Plague",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Inner Focus",
+  "type": "Survivor",
+  "teachable_by": "Haddie Kaur",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Inner Strength",
+  "type": "Survivor",
+  "teachable_by": "Nancy Wheeler",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Insidious",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Invocation: Treacherous Crows",
+  "type": "Survivor",
+  "teachable_by": "Taurie Cain",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Invocation: Weaving Spiders",
+  "type": "Survivor",
+  "teachable_by": "Sable Ward",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Iron Grasp",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Iron Maiden",
+  "type": "Killer",
+  "teachable_by": "Legion",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Iron Will",
+  "type": "Survivor",
+  "teachable_by": "Jake Park",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Keep Them Waiting",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Kindred",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Knock Out",
+  "type": "Killer",
+  "teachable_by": "Cannibal",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Languid Touch",
+  "type": "Killer",
+  "teachable_by": "Lich",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Last Stand",
+  "type": "Survivor",
+  "teachable_by": "Michonne Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Last Standing",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Leader",
+  "type": "Survivor",
+  "teachable_by": "Dwight Fairfield",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Left Behind",
+  "type": "Survivor",
+  "teachable_by": "William \"Bill\" Overbeck",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lend a Hand",
+  "type": "Survivor",
+  "teachable_by": "Shane Wiigwaas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lethal Pursuer",
+  "type": "Killer",
+  "teachable_by": "Nemesis",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Leverage",
+  "type": "Killer",
+  "teachable_by": "Skull Merchant",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Light-Footed",
+  "type": "Survivor",
+  "teachable_by": "Ellen Ripley",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lightborn",
+  "type": "Killer",
+  "teachable_by": "Hillbilly",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lightweight",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lithe",
+  "type": "Survivor",
+  "teachable_by": "Feng Min",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Low Profile",
+  "type": "Survivor",
+  "teachable_by": "Ada Wong",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lucky Break",
+  "type": "Survivor",
+  "teachable_by": "Yui Kimura",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Lucky Star",
+  "type": "Survivor",
+  "teachable_by": "Ellen Ripley",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Machine Learning",
+  "type": "Killer",
+  "teachable_by": "Singularity",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Mad Grit",
+  "type": "Killer",
+  "teachable_by": "Legion",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Made for This",
+  "type": "Survivor",
+  "teachable_by": "Gabriel Soma",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Make Your Choice",
+  "type": "Killer",
+  "teachable_by": "Pig",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Merciless Storm",
+  "type": "Killer",
+  "teachable_by": "Onry\u014d",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Mettle of Man",
+  "type": "Survivor",
+  "teachable_by": "Ashley J. Williams",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Mindbreaker",
+  "type": "Killer",
+  "teachable_by": "Demogorgon",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Mirrored Illusion",
+  "type": "Survivor",
+  "teachable_by": "Aestri Yazar & Baermar Uraz",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Moment of Glory",
+  "type": "Survivor",
+  "teachable_by": "Trevor Belmont",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Monitor & Abuse",
+  "type": "Killer",
+  "teachable_by": "Doctor",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Nemesis",
+  "type": "Killer",
+  "teachable_by": "Oni",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "No Holds Barred",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "No Mither",
+  "type": "Survivor",
+  "teachable_by": "David King",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "No One Left Behind",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "No Quarter",
+  "type": "Killer",
+  "teachable_by": "Houndmaster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "No Way Out",
+  "type": "Killer",
+  "teachable_by": "Trickster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "None Are Free",
+  "type": "Killer",
+  "teachable_by": "Ghoul",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Nowhere to Hide",
+  "type": "Killer",
+  "teachable_by": "Knight",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Off the Record",
+  "type": "Survivor",
+  "teachable_by": "Zarina Kassir",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "One-Two-Three-Four!",
+  "type": "Survivor",
+  "teachable_by": "Vee Boonyasak",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Open-Handed",
+  "type": "Survivor",
+  "teachable_by": "Ace Visconti",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Oppression",
+  "type": "Killer",
+  "teachable_by": "Twins",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Overcharge",
+  "type": "Killer",
+  "teachable_by": "Doctor",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Overcome",
+  "type": "Survivor",
+  "teachable_by": "Jonah Vasquez",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Overconfidence",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Overwhelming Presence",
+  "type": "Killer",
+  "teachable_by": "Doctor",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Overzealous",
+  "type": "Survivor",
+  "teachable_by": "Haddie Kaur",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Parental Guidance",
+  "type": "Survivor",
+  "teachable_by": "Yoichi Asakawa",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Phantom Fear",
+  "type": "Killer",
+  "teachable_by": "Animatronic",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Pharmacy",
+  "type": "Survivor",
+  "teachable_by": "Quentin Smith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Plot Twist",
+  "type": "Survivor",
+  "teachable_by": "Nicolas Cage",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Plunderer's Instinct",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Poised",
+  "type": "Survivor",
+  "teachable_by": "Jane Romero",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Pop Goes the Weasel",
+  "type": "Killer",
+  "teachable_by": "Clown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Potential Energy",
+  "type": "Survivor",
+  "teachable_by": "Vittorio Toscano",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Power Struggle",
+  "type": "Survivor",
+  "teachable_by": "\u00c9lodie Rakoto",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Predator",
+  "type": "Killer",
+  "teachable_by": "Wraith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Premonition",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Prove Thyself",
+  "type": "Survivor",
+  "teachable_by": "Dwight Fairfield",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Quick & Quiet",
+  "type": "Survivor",
+  "teachable_by": "Meg Thomas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Quick Gambit",
+  "type": "Survivor",
+  "teachable_by": "Vittorio Toscano",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Rampage",
+  "type": "Killer",
+  "teachable_by": "Slasher",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Rancor",
+  "type": "Killer",
+  "teachable_by": "Spirit",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Rapid Brutality",
+  "type": "Killer",
+  "teachable_by": "Xenomorph",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Rapid Response",
+  "type": "Survivor",
+  "teachable_by": "Orela Rose",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Ravenous",
+  "type": "Killer",
+  "teachable_by": "Krasue",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Reactive Healing",
+  "type": "Survivor",
+  "teachable_by": "Ada Wong",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Reassurance",
+  "type": "Survivor",
+  "teachable_by": "Rebecca Chambers",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Red Herring",
+  "type": "Survivor",
+  "teachable_by": "Zarina Kassir",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Remember Me",
+  "type": "Killer",
+  "teachable_by": "Nightmare",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Repressed Alliance",
+  "type": "Survivor",
+  "teachable_by": "Cheryl Mason",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Residual Manifest",
+  "type": "Survivor",
+  "teachable_by": "Haddie Kaur",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Resilience",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Resurgence",
+  "type": "Survivor",
+  "teachable_by": "Jill Valentine",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Road Life",
+  "type": "Survivor",
+  "teachable_by": "Vee Boonyasak",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Rookie Spirit",
+  "type": "Survivor",
+  "teachable_by": "Leon Scott Kennedy",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Saboteur",
+  "type": "Survivor",
+  "teachable_by": "Jake Park",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scavenger",
+  "type": "Survivor",
+  "teachable_by": "Gabriel Soma",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scene Partner",
+  "type": "Survivor",
+  "teachable_by": "Nicolas Cage",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Floods of Rage",
+  "type": "Killer",
+  "teachable_by": "Onry\u014d",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Hangman's Trick",
+  "type": "Killer",
+  "teachable_by": "Pig",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Jagged Compass",
+  "type": "Killer",
+  "teachable_by": "Houndmaster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Monstrous Shrine",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Pain Resonance",
+  "type": "Killer",
+  "teachable_by": "Artist",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Scourge Hook: Weeping Wounds",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Second Wind",
+  "type": "Survivor",
+  "teachable_by": "Steve Harrington",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Secret Project",
+  "type": "Killer",
+  "teachable_by": "First",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "See How They Run",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Self-Care",
+  "type": "Survivor",
+  "teachable_by": "Claudette Morel",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Self-Preservation",
+  "type": "Survivor",
+  "teachable_by": "Lee Yun-jin",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Septic Touch",
+  "type": "Killer",
+  "teachable_by": "Dredge",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Shadowborn",
+  "type": "Killer",
+  "teachable_by": "Wraith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Shattered Hope",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Shoulder the Burden",
+  "type": "Survivor",
+  "teachable_by": "Taurie Cain",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Silent Shadow",
+  "type": "Killer",
+  "teachable_by": "Slasher",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Slippery Meat",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Sloppy Butcher",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Small Game",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Smash Hit",
+  "type": "Survivor",
+  "teachable_by": "Lee Yun-jin",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Solidarity",
+  "type": "Survivor",
+  "teachable_by": "Jane Romero",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Soul Guard",
+  "type": "Survivor",
+  "teachable_by": "Cheryl Mason",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Specialist",
+  "type": "Survivor",
+  "teachable_by": "Lara Croft",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Spies from the Shadows",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Spine Chill",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Spirit Fury",
+  "type": "Killer",
+  "teachable_by": "Spirit",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Sprint Burst",
+  "type": "Survivor",
+  "teachable_by": "Meg Thomas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Stake Out",
+  "type": "Survivor",
+  "teachable_by": "Detective David Tapp",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Starstruck",
+  "type": "Killer",
+  "teachable_by": "Trickster",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Still Sight",
+  "type": "Survivor",
+  "teachable_by": "Aestri Yazar & Baermar Uraz",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Streetwise",
+  "type": "Survivor",
+  "teachable_by": "Nea Karlsson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Strength in Shadows",
+  "type": "Survivor",
+  "teachable_by": "Sable Ward",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Stridor",
+  "type": "Killer",
+  "teachable_by": "Nurse",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Superior Anatomy",
+  "type": "Killer",
+  "teachable_by": "Mastermind",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Surge",
+  "type": "Killer",
+  "teachable_by": "Demogorgon",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Surveillance",
+  "type": "Killer",
+  "teachable_by": "Pig",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Collective Stealth",
+  "type": "Survivor",
+  "teachable_by": "Renato Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Full Circuit",
+  "type": "Survivor",
+  "teachable_by": "Dustin Henderson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Power of Two",
+  "type": "Survivor",
+  "teachable_by": "Thalita Lyra",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Soft-Spoken",
+  "type": "Survivor",
+  "teachable_by": "Eleven",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Throw Down",
+  "type": "Survivor",
+  "teachable_by": "Michonne Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Teamwork: Toughen Up",
+  "type": "Survivor",
+  "teachable_by": "Rick Grimes",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Technician",
+  "type": "Survivor",
+  "teachable_by": "Feng Min",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Tenacity",
+  "type": "Survivor",
+  "teachable_by": "Detective David Tapp",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Terminus",
+  "type": "Killer",
+  "teachable_by": "Mastermind",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Territorial Imperative",
+  "type": "Killer",
+  "teachable_by": "Huntress",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Thanatophobia",
+  "type": "Killer",
+  "teachable_by": "Nurse",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "This Is Not Happening",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Thrilling Tremors",
+  "type": "Killer",
+  "teachable_by": "Ghost Face",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "THWACK!",
+  "type": "Killer",
+  "teachable_by": "Skull Merchant",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Tinkerer",
+  "type": "Killer",
+  "teachable_by": "Hillbilly",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Tough Runner",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Trail of Torment",
+  "type": "Killer",
+  "teachable_by": "Executioner",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Troubleshooter",
+  "type": "Survivor",
+  "teachable_by": "Gabriel Soma",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Turn Back the Clock",
+  "type": "Killer",
+  "teachable_by": "First",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Ultimate Weapon",
+  "type": "Killer",
+  "teachable_by": "Xenomorph",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Unbound",
+  "type": "Killer",
+  "teachable_by": "Unknown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Unbreakable",
+  "type": "Survivor",
+  "teachable_by": "William \"Bill\" Overbeck",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Underperform",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Undone",
+  "type": "Killer",
+  "teachable_by": "Unknown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Unforeseen",
+  "type": "Killer",
+  "teachable_by": "Unknown",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Unnerving Presence",
+  "type": "Killer",
+  "teachable_by": "Trapper",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Unrelenting",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Up the Ante",
+  "type": "Survivor",
+  "teachable_by": "Ace Visconti",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Urban Evasion",
+  "type": "Survivor",
+  "teachable_by": "Nea Karlsson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Vigil",
+  "type": "Survivor",
+  "teachable_by": "Quentin Smith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Visionary",
+  "type": "Survivor",
+  "teachable_by": "Felix Richter",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Wake Up!",
+  "type": "Survivor",
+  "teachable_by": "Quentin Smith",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Wandering Eye",
+  "type": "Killer",
+  "teachable_by": "Krasue",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "We See You",
+  "type": "Survivor",
+  "teachable_by": "Eleven",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "We'll Make It",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "We're Gonna Live Forever",
+  "type": "Survivor",
+  "teachable_by": "David King",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Weave Attunement",
+  "type": "Killer",
+  "teachable_by": "Lich",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Whispers",
+  "type": "Killer",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Wicked",
+  "type": "Survivor",
+  "teachable_by": "Sable Ward",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Wide Open Throttle",
+  "type": "Survivor",
+  "teachable_by": "Shane Wiigwaas",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Will to Live",
+  "type": "Survivor",
+  "teachable_by": "General",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Windows of Opportunity",
+  "type": "Survivor",
+  "teachable_by": "Kate Denson",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Wiretap",
+  "type": "Survivor",
+  "teachable_by": "Ada Wong",
+  "confidence": "confirmed"
+ },
+ {
+  "name": "Zanshin Tactics",
+  "type": "Killer",
+  "teachable_by": "Oni",
+  "confidence": "confirmed"
+ }
+]
