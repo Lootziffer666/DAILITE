@@ -8,6 +8,8 @@ const pool = new Pool({
 });
 
 const createTablesSQL = `
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+
 CREATE TABLE IF NOT EXISTS killers (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL UNIQUE,

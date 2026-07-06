@@ -22,6 +22,10 @@ router.post('/', async (req, res) => {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
+  if (!['escape', 'die', 'sacrifice'].includes(outcome)) {
+    return res.status(400).json({ error: "outcome must be 'escape', 'die', or 'sacrifice'" });
+  }
+
   try {
     const result = await pool.query(
       `INSERT INTO matches (player_name, killer, map, outcome, duration_seconds,
@@ -131,7 +135,9 @@ function generateMatchStory(match) {
 
   if (first_hook_seconds) {
     const hookMinute = Math.floor(first_hook_seconds / 60);
-    story += `After ${hookMinute} minute(s) you were first hooked. `;
+    const hookSecond = first_hook_seconds % 60;
+    const hookTime = hookMinute > 0 ? `${hookMinute}m ${hookSecond}s` : `${hookSecond}s`;
+    story += `After ${hookTime} you were first hooked. `;
   }
 
   if (total_hooks) {

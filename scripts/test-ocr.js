@@ -48,7 +48,7 @@ async function testOCRParser() {
   for (const [name, mockText] of Object.entries(mockScreenshots)) {
     console.log(`\nTest Case: ${name}`);
     const gameState = ocrParser.extractGameState(mockText.toUpperCase(), {
-      confidence: 0.85,
+      confidence: 85, // Tesseract reports confidence on a 0-100 scale
     });
 
     console.log(`  Killer:     ${gameState.killer || 'NOT DETECTED'}`);

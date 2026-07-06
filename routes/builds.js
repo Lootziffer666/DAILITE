@@ -133,7 +133,9 @@ function getMetaStatus(perks, meta) {
   return {
     has_meta_perks: matching.length,
     tier_one_count: tierOne.length,
-    coverage: ((matching.length / Math.max(matching.length, 1)) * 100).toFixed(0) + '%',
+    coverage: tierOne.length > 0
+      ? ((matching.length / tierOne.length) * 100).toFixed(0) + '%'
+      : '0%',
   };
 }
 
@@ -163,21 +165,26 @@ function generateRecommendation(winRate, sampleSize, perks, killerType, killerDa
   }
 
   // Killer tier assessment
+  const killRatePercent = typeof killerData.kill_rate === 'number'
+    ? Math.round(killerData.kill_rate * 100)
+    : null;
   if (killerData.tier === 'D') {
-    recommendation += `⚠️ ${killerType} is low-tier (${killerData.kill_rate}% KR). This will be challenging.\n`;
+    recommendation += `⚠️ ${killerType} is low-tier${killRatePercent !== null ? ` (${killRatePercent}% KR)` : ''}. This will be challenging.\n`;
   } else if (killerData.tier === 'S') {
     recommendation += `🔥 ${killerType} is top-tier. Strong killer choice.\n`;
   }
 
-  // Win rate assessment
-  if (winRate >= 60) {
-    recommendation += `✅ Great matchup! ${winRate}% escape rate against ${killerType}. Keep this build.\n`;
-  } else if (winRate >= 50) {
-    recommendation += `👍 Solid performance. ${winRate}% escape rate - this build works.\n`;
-  } else if (winRate >= 40) {
-    recommendation += `⚠️ Moderate success (${winRate}%). Consider tweaking for ${killerType}.\n`;
-  } else {
-    recommendation += `❌ Struggling (${winRate}%). Try different perks against ${killerType}.\n`;
+  // Win rate assessment (only meaningful once there's at least one match)
+  if (sampleSize > 0) {
+    if (winRate >= 60) {
+      recommendation += `✅ Great matchup! ${winRate}% escape rate against ${killerType}. Keep this build.\n`;
+    } else if (winRate >= 50) {
+      recommendation += `👍 Solid performance. ${winRate}% escape rate - this build works.\n`;
+    } else if (winRate >= 40) {
+      recommendation += `⚠️ Moderate success (${winRate}%). Consider tweaking for ${killerType}.\n`;
+    } else {
+      recommendation += `❌ Struggling (${winRate}%). Try different perks against ${killerType}.\n`;
+    }
   }
 
   // MMR-specific advice
