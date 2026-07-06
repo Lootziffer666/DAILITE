@@ -12,9 +12,10 @@ Not just win/loss tracking. **Real insight into your gameplay:**
 - 📖 **Match Stories** - Narrative summaries instead of raw stats
 - 📊 **Advanced Analytics** - Chase duration, hook timing, generator efficiency, heal time
 - 🔮 **Build Coach** - Personalized perk effectiveness vs killer types
-- 👹 **Killer Database** - Track your performance against each killer
-- 🗺️ **Map Knowledge** - Performance breakdowns by map
+- 👹 **Killer Database** - Track your performance against all 43 killers
+- 🗺️ **Map Knowledge** - Performance breakdowns by all 47 maps
 - ⚡ **Real-time Overlay** - Live game suggestions (when OCR is ready)
+- 🎮 **Screenshot OCR** - Automatic killer/map/perk detection from Dead by Daylight screenshots
 
 ---
 
@@ -62,6 +63,48 @@ http://localhost:5173
 ```
 
 Click **"Simulate Match"** to generate test data and see the SPLATTER motion effects in action! 🌪️
+
+---
+
+## 📸 Screenshots
+
+### Dashboard UI
+The main analytics dashboard with Ink & Iron Glow design and FLUBBER motion effects:
+
+![Dashboard](./screenshots/UI_dashboard.png)
+
+### API Data Endpoints
+
+#### All 43 Killers (with real names & origin)
+![Killers API](./screenshots/01_killers_api.png)
+
+#### All 47 Maps (organized by realm)
+![Maps API](./screenshots/02_maps_api.png)
+
+#### All 321 Perks (Killer, Survivor, General)
+![Perks API](./screenshots/03_perks_api.png)
+
+#### OCR System Status
+![OCR Status](./screenshots/04_ocr_status.png)
+
+#### Interactive Swagger Documentation
+![Swagger Docs](./screenshots/05_swagger_docs.png)
+
+---
+
+## 📊 Database Coverage
+
+| Entity | Count | Improvement |
+|--------|-------|------------|
+| **Killers** | 43 | +95% (was 22) |
+| **Survivors** | 53 | NEW |
+| **Maps** | 47 | +292% (was 12) |
+| **Perks** | 321 | +817% (was 35) |
+| **Realms** | 21 | Reference hierarchy |
+
+**Data Source:** Verified from deadbydaylight.wiki.gg (2026-07-06 audit)
+
+---
 
 ### 5. Live OCR (Optional - Phase 2)
 
@@ -150,7 +193,9 @@ The Electron app will:
 - [x] Tesseract.js OCR integration (game state extraction)
 - [x] OCR REST endpoints (analyze, live-session)
 - [x] Image preprocessing (grayscale, normalize)
-- [x] Killer/map/perk detection from OCR text
+- [x] Killer/map/perk detection from OCR text (43 killers, 47 maps, 321 perks)
+- [x] Wiki data verification + 95% expansion of killer/map coverage
+- [x] Survivors table + complete character tracking
 - [ ] Electron desktop app (screen capture bridge)
 - [ ] Live overlay window (transparent, always-on-top)
 - [ ] Real-time match parsing stream
@@ -217,18 +262,20 @@ DAILITE/
 
 This is a **proof-of-concept** that advanced Dead by Daylight analytics isn't difficult to build:
 
-1. **Backend API**: ✅ Done (OpenAPI 3.0, PostgreSQL, Swagger)
+1. **Backend API**: ✅ Done (OpenAPI 3.0, PostgreSQL, Swagger, 43 killers, 53 survivors, 321 perks)
 2. **Design System**: ✅ Done (Ink & Iron Glow + FLUBBER)
 3. **Motion Effects**: ✅ Done (SPLATTER library with adaptive triggering)
 4. **Dashboard UI**: ✅ Done (React 18 + Vite)
-5. **OCR Engine**: 🔨 In Progress (Tesseract.js + game state extraction)
-6. **Live Overlay**: → Next (Electron desktop app with screen capture)
+5. **OCR Engine**: ✅ Functional (Tesseract.js + game state extraction, 43 killer recognition, 47 maps)
+6. **Wiki Verification**: ✅ Complete (All data verified against deadbydaylight.wiki.gg, +95% expansion)
+7. **Live Overlay**: → Next (Electron desktop app with screen capture)
 
 **Phase 1 Complete:** Full backend + polished dashboard with design + motion.  
-**Phase 2 Progress:** OCR parser extracts killer, map, perks, hooks, generators from screenshots.  
+**Phase 2 Progress:** OCR parser recognizes all 43 killers and 47 maps; database expanded from wiki sources.  
 **Phase 3 Vision:** Real-time in-game overlay with adaptive suggestions based on live match state.
 
-**Timeline:** MVP with live overlay in ~2 weeks; full PoC in ~1 month with team.
+**Current State:** Ready for Phase 2 - Electron integration for live screenshot analysis.  
+**Timeline:** Live overlay MVP in ~1-2 weeks; full production PoC in ~1 month.
 
 ---
 
