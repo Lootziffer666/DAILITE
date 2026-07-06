@@ -1,0 +1,300 @@
+{
+  "version": "2026-07-06",
+  "source": "https://hens333.com/callouts",
+  "description": "Complete Dead by Daylight callout system with map positions and communication terminology",
+
+  "clock_system": {
+    "description": "All maps use a 12-clock positioning system starting from top center",
+    "format": "[Location] at [Clock Position]",
+    "example": "Killer at 3 o'clock near Gas Heaven",
+    "positions": {
+      "12": "Top/North",
+      "1": "Top-Right/Northeast",
+      "2": "Right/East",
+      "3": "Far Right/East",
+      "4": "Bottom-Right/Southeast",
+      "5": "Bottom-Right/Southeast",
+      "6": "Bottom/South",
+      "7": "Bottom-Left/Southwest",
+      "8": "Left/West",
+      "9": "Far Left/West",
+      "10": "Top-Left/Northwest",
+      "11": "Top-Left/Northwest"
+    }
+  },
+
+  "maps": {
+    "AUTOHAVEN WRECKERS": {
+      "realm": "Autohaven Wreckers",
+      "locations": [
+        "Azarov's Resting Place",
+        "Blood Lodge",
+        "Gas Heaven",
+        "Wreckers' Yard"
+      ],
+      "callout_format": "[Location] at [1-12]"
+    },
+    "BADHAM PRESCHOOL": {
+      "realm": "Badham Preschool",
+      "locations": [
+        "Preschool I",
+        "Preschool II",
+        "Preschool III",
+        "Preschool IV",
+        "Preschool V"
+      ],
+      "variants": 5
+    },
+    "COLDWIND FARM": {
+      "realm": "Coldwind Farm",
+      "locations": [
+        "Fractured Cowshed",
+        "Rancid Abattoir",
+        "Torment Creek",
+        "Disciple's Compound",
+        "The Shattered Square"
+      ]
+    },
+    "MACMILLAN ESTATE": {
+      "realm": "MacMillan Estate",
+      "locations": [
+        "Coal Tower",
+        "Groaning Storehouse",
+        "Ironworks of Misery",
+        "Shelter Woods",
+        "The Tunnels"
+      ]
+    },
+    "CROTUS PRENN ASYLUM": {
+      "realm": "Crotus Prenn Asylum",
+      "locations": [
+        "Asylum",
+        "Underground",
+        "Courtyard"
+      ]
+    },
+    "HADDONFIELD": {
+      "realm": "Haddonfield",
+      "locations": [
+        "Haddon Street",
+        "Broken Street",
+        "School Street"
+      ]
+    },
+    "RED FOREST": {
+      "realm": "Red Forest",
+      "locations": [
+        "Forest of Whispers",
+        "Pale Thicket",
+        "Rotten Fields"
+      ]
+    },
+    "BACKWATER SWAMP": {
+      "realm": "Backwater Swamp",
+      "locations": [
+        "Glenvale",
+        "Grim Pantry",
+        "Wailing Bell"
+      ]
+    },
+    "LERYS MEMORIAL INSTITUTE": {
+      "realm": "Lery's Memorial Institute",
+      "locations": [
+        "Underground",
+        "Main Building"
+      ]
+    },
+    "HAWKINS NATIONAL LABORATORY": {
+      "realm": "Hawkins National Laboratory",
+      "locations": [
+        "Underground",
+        "Main Facility"
+      ]
+    },
+    "GIDEON MEAT PLANT": {
+      "realm": "Gideon Meat Plant (The Game)",
+      "locations": [
+        "Main Meat Plant"
+      ]
+    },
+    "MIDWICH ELEMENTARY SCHOOL": {
+      "realm": "Midwich Elementary School",
+      "locations": [
+        "School Building"
+      ]
+    },
+    "GRAVE OF GLENVALE": {
+      "realm": "Grave of Glenvale",
+      "locations": [
+        "Cemetery"
+      ]
+    },
+    "SILENT HILL": {
+      "realm": "Silent Hill",
+      "locations": [
+        "Midwich Elementary School",
+        "Lakeside"
+      ]
+    },
+    "BLACKWATER SWAMP": {
+      "realm": "Blackwater Swamp",
+      "locations": [
+        "Lakeside"
+      ]
+    },
+    "RACCOON CITY": {
+      "realm": "Raccoon City Police Department",
+      "locations": [
+        "RPD East Wing",
+        "RPD West Wing",
+        "Underground"
+      ]
+    },
+    "THE DESCENT": {
+      "realm": "The Descent",
+      "locations": [
+        "Underground Mine"
+      ]
+    },
+    "THE FORSAKEN BONEYARD": {
+      "realm": "The Forsaken Boneyard",
+      "locations": [
+        "Boneyard"
+      ]
+    },
+    "FORGET ME NOT": {
+      "realm": "Forget Me Not",
+      "locations": [
+        "Forest Area"
+      ]
+    },
+    "GARDEN OF JOY": {
+      "realm": "Garden of Joy",
+      "locations": [
+        "Cornfield"
+      ]
+    },
+    "RPD LIBRARY": {
+      "realm": "RPD Library",
+      "locations": [
+        "Library Building"
+      ]
+    }
+  },
+
+  "communication_callouts": {
+    "enemy_communication": {
+      "killer_location": {
+        "format": "[Killer] at [Clock Position]",
+        "example": "Spirit at 3 o'clock near Gas Heaven",
+        "use_case": "Alert team to killer location"
+      },
+      "chase": {
+        "callouts": ["Chase at [Location]", "In chase at [Clock Position]"],
+        "use_case": "Communicate active chase happening"
+      },
+      "hook": {
+        "format": "[Survivor] hooked at [Location]",
+        "example": "Jake hooked at 12 o'clock",
+        "use_case": "Locate hooked teammate"
+      }
+    },
+    "objective_communication": {
+      "generators": {
+        "callouts": ["Gen at [Clock Position]", "[Location] gen"],
+        "example": "Gen at 3 o'clock, Gas Heaven area",
+        "use_case": "Coordinate generator focus"
+      },
+      "exit_gates": {
+        "callouts": ["Gates at [Clock Position]", "North gate spawned"],
+        "use_case": "Communicate exit gate locations"
+      },
+      "cleansing": {
+        "callouts": ["Totem at [Location]", "Hex at [Clock Position]"],
+        "use_case": "Call totem/hex locations"
+      }
+    },
+    "strategy_callouts": {
+      "three_gen": {
+        "meaning": "Three generators close together - survivor disadvantage",
+        "strategy": "Avoid letting killer lock down these 3 gens",
+        "example": "3-gen at Coal, Gas, and Wreckers"
+      },
+      "pallet_town": {
+        "meaning": "Area with many pallets close together",
+        "strategy": "Good for looping, risky for survivors"
+      },
+      "dead_zone": {
+        "meaning": "Area with minimal pallets/resources",
+        "strategy": "Dangerous for survivors to get caught here"
+      },
+      "safe_zone": {
+        "meaning": "Area with many resources for survivor advantage",
+        "strategy": "Good landing spot if injured"
+      }
+    }
+  },
+
+  "abbreviations": {
+    "gen": "Generator",
+    "hook": "Sacrifice hook/bleeding hook",
+    "2nd": "Second hook state",
+    "3rd": "Third hook state (death)",
+    "slugged": "Left on ground instead of hooked",
+    "SWF": "Survive With Friends",
+    "chase": "Killer chasing a survivor",
+    "loop": "Running in circles around objects",
+    "pallet stun": "Throwing pallet to stun killer",
+    "totem": "Hex totem location",
+    "cleanse": "Destroy hex totem",
+    "3-gen": "Three generators close together",
+    "rush": "Survivors rushing generators",
+    "camp": "Killer staying near hook",
+    "tunnel": "Targeting hooked survivor after unhook"
+  },
+
+  "ocr_recognition_patterns": {
+    "clock_position": "\\b([1-9]|1[0-2])\\s*(?:o'?clock|oclock)\\b",
+    "location_keywords": [
+      "coal tower",
+      "gas heaven",
+      "blood lodge",
+      "shelter woods",
+      "haddonfield",
+      "midwich",
+      "rpd",
+      "swamp",
+      "red forest"
+    ],
+    "objective_keywords": [
+      "gen",
+      "generator",
+      "gate",
+      "hatch",
+      "totem",
+      "hex",
+      "hook",
+      "sacrifice"
+    ],
+    "strategy_keywords": [
+      "3-gen",
+      "pallet town",
+      "dead zone",
+      "chase",
+      "loop",
+      "camp",
+      "tunnel"
+    ]
+  },
+
+  "recommendations_for_dailite": [
+    "Extract clock positions from OCR text for precise location tracking",
+    "Recognize location callouts to build map heat maps",
+    "Identify strategy terms to classify match type",
+    "Use abbreviations to expand match story narrative",
+    "Suggest relevant callouts based on game state in real-time overlay",
+    "Track which callouts appear most in successful matches",
+    "Build communication patterns database",
+    "Enable team communication integration in future phases"
+  ]
+}
