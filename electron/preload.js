@@ -8,7 +8,9 @@ contextBridge.exposeInMainWorld('api', {
     ipcRenderer.on('match-event', (event, data) => callback(data)),
   captureScreen: () => ipcRenderer.invoke('capture-screen'),
   analyzeScreen: () => ipcRenderer.invoke('analyze-screen'),
-  createOverlay: () => ipcRenderer.invoke('create-overlay'),
+  createOverlay: (displayIndex) => ipcRenderer.invoke('create-overlay', displayIndex),
+  listDisplays: () => ipcRenderer.invoke('list-displays'),
+  getGameDisplay: () => ipcRenderer.invoke('get-game-display'),
   startLiveCapture: (interval) => ipcRenderer.invoke('start-live-capture', interval),
   stopLiveCapture: () => ipcRenderer.invoke('stop-live-capture'),
   onGameStateUpdate: (callback) =>

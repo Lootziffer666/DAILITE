@@ -3,6 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { spawn } from 'child_process';
 import axios from 'axios';
+import { performanceManager } from './performance.js';
+import { getOptimizedConfig, displayDetection } from './overlay-config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,6 +14,10 @@ let overlayWindow;
 let serverProcess;
 let captureInterval;
 const API_URL = 'http://localhost:3000/api';
+
+// Multi-monitor tracking
+let gameDisplay = null;
+let overlayDisplays = [];
 
 function createWindow() {
   mainWindow = new BrowserWindow({
@@ -39,21 +45,44 @@ function createWindow() {
   });
 }
 
-async function createOverlay() {
+async function findGameDisplay() {
+  try {
+    // Try to detect Dead by Daylight window
+    const displays = screen.getAllDisplays();
+
+    // For now, use primary display as game display
+    // TODO: Implement native module to detect game window location
+    gameDisplay = displays[0];
+    return gameDisplay;
+  } catch (error) {
+    console.error('Error finding game display:', error);
+    return screen.getPrimaryDisplay();
+  }
+}
+
+async function createOverlay(displayIndex = 0) {
   if (overlayWindow && !overlayWindow.isDestroyed()) return;
 
-  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+  const displays = screen.getAllDisplays();
+  const targetDisplay = displays[displayIndex] || displays[0];
+
+  if (!gameDisplay) {
+    gameDisplay = await findGameDisplay();
+  }
+
+  const { x, y, width, height } = targetDisplay.bounds;
 
   overlayWindow = new BrowserWindow({
     width,
     height,
-    x: 0,
-    y: 0,
+    x,
+    y,
     frame: false,
     transparent: true,
     alwaysOnTop: true,
     skipTaskbar: true,
     focusable: false,
+    hasShadow: false,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
@@ -61,8 +90,13 @@ async function createOverlay() {
     },
   });
 
-  overlayWindow.loadFile(path.join(__dirname, 'overlay.html'));
+  // Performance optimizations
+  overlayWindow.webContents.setBackgroundThrottling(false);
   overlayWindow.setIgnoreMouseEvents(true);
+
+  overlayWindow.loadFile(path.join(__dirname, 'overlay.html'));
+
+  console.log(`Overlay created on display ${displayIndex} (${width}x${height} at ${x},${y})`);
 }
 
 function startBackendServer() {
@@ -77,8 +111,18 @@ function startBackendServer() {
 }
 
 app.on('ready', () => {
+  // Detect system specs and apply optimizations
+  const setup = process.env.DAILITE_SETUP || 'standard'; // Set via env or detect
+  const config = getOptimizedConfig(setup);
+  console.log(`🎮 DAILITE Overlay - Setup: ${setup.toUpperCase()}`);
+  performanceManager.applyOptimizations(config.performance);
+
   startBackendServer();
   setTimeout(() => createWindow(), 2000);
+});
+
+app.on('will-quit', () => {
+  performanceManager.restoreDefaults();
 });
 
 app.on('window-all-closed', () => {
@@ -164,7 +208,29 @@ ipcMain.handle('get-api-data', async (event, endpoint) => {
 
 ipcMain.handle('capture-screen', captureScreen);
 ipcMain.handle('analyze-screen', analyzeScreen);
-ipcMain.handle('create-overlay', createOverlay);
+ipcMain.handle('create-overlay', (event, displayIndex) => {
+  createOverlay(displayIndex || 0);
+  return { status: 'overlay_created' };
+});
+ipcMain.handle('list-displays', () => {
+  const displays = screen.getAllDisplays();
+  return displays.map((d, i) => ({
+    index: i,
+    id: d.id,
+    bounds: d.bounds,
+    workArea: d.workAreaSize,
+    scaleFactor: d.scaleFactor,
+    isPrimary: d.bounds.x === 0 && d.bounds.y === 0,
+  }));
+});
+ipcMain.handle('get-game-display', async () => {
+  const display = await findGameDisplay();
+  return {
+    bounds: display.bounds,
+    workArea: display.workAreaSize,
+    scaleFactor: display.scaleFactor,
+  };
+});
 ipcMain.handle('start-live-capture', (event, interval) => {
   startLiveCapture(interval);
   return { status: 'capturing' };
