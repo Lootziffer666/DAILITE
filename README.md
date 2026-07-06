@@ -73,23 +73,6 @@ The main analytics dashboard with Ink & Iron Glow design and FLUBBER motion effe
 
 ![Dashboard](./screenshots/UI_dashboard.png)
 
-### API Data Endpoints
-
-#### All 43 Killers (with real names & origin)
-![Killers API](./screenshots/01_killers_api.png)
-
-#### All 47 Maps (organized by realm)
-![Maps API](./screenshots/02_maps_api.png)
-
-#### All 321 Perks (Killer, Survivor, General)
-![Perks API](./screenshots/03_perks_api.png)
-
-#### OCR System Status
-![OCR Status](./screenshots/04_ocr_status.png)
-
-#### Interactive Swagger Documentation
-![Swagger Docs](./screenshots/05_swagger_docs.png)
-
 ---
 
 ## 📊 Database Coverage
