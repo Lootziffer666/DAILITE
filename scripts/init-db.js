@@ -18,6 +18,14 @@ CREATE TABLE IF NOT EXISTS killers (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE IF NOT EXISTS survivors (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL UNIQUE,
+  real_name VARCHAR(255),
+  dlc VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 CREATE TABLE IF NOT EXISTS maps (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255) NOT NULL UNIQUE,
@@ -78,6 +86,7 @@ CREATE TABLE IF NOT EXISTS killer_encounters (
 );
 
 CREATE INDEX IF NOT EXISTS idx_killers_name ON killers(name);
+CREATE INDEX IF NOT EXISTS idx_survivors_name ON survivors(name);
 CREATE INDEX IF NOT EXISTS idx_maps_name ON maps(name);
 CREATE INDEX IF NOT EXISTS idx_perks_name ON perks(name);
 CREATE INDEX IF NOT EXISTS idx_matches_player ON matches(player_name);
