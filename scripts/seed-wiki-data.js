@@ -28,8 +28,8 @@ function loadWikiData() {
 
   // Map wiki survivors to app schema
   const survivors = wikiSurvivors.survivors.map(s => ({
-    name: s.title,
-    real_name: s.real_name,
+    name: s.name,
+    real_name: null,
     dlc: s.origin,
   }));
 
