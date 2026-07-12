@@ -3,6 +3,10 @@
 **Dead by Daylight Personal Analytics**  
 Match analytics engine combining Ink & Iron Glow design with FLUBBER's playful motion chaos.
 
+> **🗺️ Building on this repo?** Read **[MASTERPLAN.md](./MASTERPLAN.md)** first — the verified
+> audit, defect inventory, and phased task plan for finishing the app. It is the canonical plan
+> and overrides the Quick Start / phase-status sections below where they disagree.
+
 ---
 
 ## What is DAILITE?
